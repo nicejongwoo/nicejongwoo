@@ -40,6 +40,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 body {
@@ -160,12 +161,14 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
     position: relative;
     padding-top: 80px;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -236,41 +239,19 @@ body {
     transform: translateY(-2px);
 }
 
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-}
-
-.arrow-down {
-    width: 20px;
-    height: 20px;
-    border-right: 2px solid var(--text-secondary);
-    border-bottom: 2px solid var(--text-secondary);
-    transform: rotate(45deg);
-    margin: 0.5rem auto;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0) rotate(45deg);
-    }
-    40% {
-        transform: translateY(-10px) rotate(45deg);
-    }
-    60% {
-        transform: translateY(-5px) rotate(45deg);
-    }
-}
-
 /* Section Styles */
 section {
     padding: 5rem 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+section:not(#home) {
+    scroll-margin-top: 80px;
+}
+
+#home {
+    scroll-snap-align: start;
 }
 
 .section-title {

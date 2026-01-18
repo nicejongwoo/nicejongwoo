@@ -36,23 +36,24 @@ navLinks.forEach(link => {
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+// window.addEventListener('scroll', () => {
+//     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+//     if (currentScroll > 100) {
+//         navbar.classList.add('scrolled');
+//     } else {
+//         navbar.classList.remove('scrolled');
+//     }
 
-    lastScroll = currentScroll;
-});
+//     lastScroll = currentScroll;
+// });
 
 // Active nav link on scroll
 const sections = document.querySelectorAll('section');
 
 function updateActiveNavLink() {
-    const scrollPosition = window.pageYOffset + 100;
+    const navbarHeight = navbar.offsetHeight;
+    const scrollPosition = window.pageYOffset + navbarHeight + 50;
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
@@ -116,23 +117,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
 
         if (target) {
-            const offsetTop = target.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+            scrollToSection(target);
         }
     });
 });
 
+// Scroll to section helper function
+function scrollToSection(target) {
+    if (!target) return;
+
+    const navbarHeight = navbar.offsetHeight;
+    const targetId = target.getAttribute('id');
+
+    // For home section, scroll to top
+    if (targetId === 'home') {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    } else {
+        // For other sections, align to top with navbar offset
+        const offsetTop = target.offsetTop - navbarHeight;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
 // Skill tag hover effect - add ripple animation
 const skillTags = document.querySelectorAll('.skill-tag');
 skillTags.forEach(tag => {
-    tag.addEventListener('mouseenter', function(e) {
+    tag.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.05)';
     });
 
-    tag.addEventListener('mouseleave', function(e) {
+    tag.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1)';
     });
 });
@@ -140,11 +160,11 @@ skillTags.forEach(tag => {
 // Add parallax effect to hero section
 const hero = document.querySelector('.hero');
 if (hero) {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallax = scrolled * 0.5;
-        hero.style.transform = `translateY(${parallax}px)`;
-    });
+    // window.addEventListener('scroll', () => {
+    //     const scrolled = window.pageYOffset;
+    //     const parallax = scrolled * 0.5;
+    //     hero.style.transform = `translateY(${parallax}px)`;
+    // });
 }
 
 // Counter animation for achievements
