@@ -73,42 +73,42 @@ function updateActiveNavLink() {
 
 window.addEventListener('scroll', updateActiveNavLink);
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// Intersection Observer for fade-in animations - DISABLED
+// const observerOptions = {
+//     threshold: 0.1,
+//     rootMargin: '0px 0px -50px 0px'
+// };
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-        }
-    });
-}, observerOptions);
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('fade-in');
+//         }
+//     });
+// }, observerOptions);
 
 // Observe all sections
-sections.forEach(section => {
-    observer.observe(section);
-});
+// sections.forEach(section => {
+//     observer.observe(section);
+// });
 
 // Observe skill categories
-const skillCategories = document.querySelectorAll('.skill-category');
-skillCategories.forEach(category => {
-    observer.observe(category);
-});
+// const skillCategories = document.querySelectorAll('.skill-category');
+// skillCategories.forEach(category => {
+//     observer.observe(category);
+// });
 
 // Observe project cards
-const projectCards = document.querySelectorAll('.project-card');
-projectCards.forEach(card => {
-    observer.observe(card);
-});
+// const projectCards = document.querySelectorAll('.project-card');
+// projectCards.forEach(card => {
+//     observer.observe(card);
+// });
 
 // Observe achievement blocks
-const achievementBlocks = document.querySelectorAll('.achievement-block');
-achievementBlocks.forEach(block => {
-    observer.observe(block);
-});
+// const achievementBlocks = document.querySelectorAll('.achievement-block');
+// achievementBlocks.forEach(block => {
+//     observer.observe(block);
+// });
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -145,17 +145,17 @@ function scrollToSection(target) {
     }
 }
 
-// Skill tag hover effect - add ripple animation
-const skillTags = document.querySelectorAll('.skill-tag');
-skillTags.forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.05)';
-    });
+// Skill tag hover effect - DISABLED
+// const skillTags = document.querySelectorAll('.skill-tag');
+// skillTags.forEach(tag => {
+//     tag.addEventListener('mouseenter', function() {
+//         this.style.transform = 'scale(1.05)';
+//     });
 
-    tag.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1)';
-    });
-});
+//     tag.addEventListener('mouseleave', function() {
+//         this.style.transform = 'scale(1)';
+//     });
+// });
 
 // Add parallax effect to hero section
 const hero = document.querySelector('.hero');
@@ -183,28 +183,28 @@ function animateCounter(element, target, duration = 2000) {
     }, 16);
 }
 
-// Observe achievement highlights for counter animation
-const achievementHighlights = document.querySelectorAll('.achievement-highlight');
-const counterObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const text = entry.target.textContent;
+// Observe achievement highlights for counter animation - DISABLED
+// const achievementHighlights = document.querySelectorAll('.achievement-highlight');
+// const counterObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             const text = entry.target.textContent;
 
-            // Check for numbers in the text and animate them
-            if (text.includes('90%')) {
-                // Already animated, skip
-            } else if (text.includes('1억')) {
-                // Could add animation for large numbers
-            }
+//             // Check for numbers in the text and animate them
+//             if (text.includes('90%')) {
+//                 // Already animated, skip
+//             } else if (text.includes('1억')) {
+//                 // Could add animation for large numbers
+//             }
 
-            counterObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
+//             counterObserver.unobserve(entry.target);
+//         }
+//     });
+// }, { threshold: 0.5 });
 
-achievementHighlights.forEach(highlight => {
-    counterObserver.observe(highlight);
-});
+// achievementHighlights.forEach(highlight => {
+//     counterObserver.observe(highlight);
+// });
 
 // Add typing effect to hero subtitle (optional)
 function typeWriter(element, text, speed = 100) {
@@ -231,11 +231,11 @@ function typeWriter(element, text, speed = 100) {
 //     }
 // });
 
-// Add scroll reveal animation class
-const scrollRevealElements = document.querySelectorAll('.info-card, .contact-item, .timeline-content');
-scrollRevealElements.forEach(element => {
-    observer.observe(element);
-});
+// Add scroll reveal animation class - DISABLED
+// const scrollRevealElements = document.querySelectorAll('.info-card, .contact-item, .timeline-content');
+// scrollRevealElements.forEach(element => {
+//     observer.observe(element);
+// });
 
 // Add loading animation
 window.addEventListener('load', () => {

@@ -39,8 +39,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    /* scroll-behavior removed for simple scrolling - smooth scroll only on nav clicks */
 }
 
 body {
@@ -242,16 +241,10 @@ body {
 /* Section Styles */
 section {
     padding: 5rem 0;
-    scroll-snap-align: start;
-    scroll-snap-stop: normal;
 }
 
 section:not(#home) {
     scroll-margin-top: 80px;
-}
-
-#home {
-    scroll-snap-align: start;
 }
 
 .section-title {
@@ -762,20 +755,7 @@ section:not(#home) {
 }
 
 /* Animations */
-.fade-in {
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Removed fade-in animation for better performance */
 
 /* Responsive Design */
 @media (max-width: 968px) {
