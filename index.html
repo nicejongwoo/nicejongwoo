@@ -59,13 +59,13 @@
                 <div class="about-text">
                     <p>안녕하세요. Java, Kotlin, Spring 기반의 7년차 백엔드 개발자 이종우입니다.</p>
                     <p>
-                        규모가 크지않은 공공기간 시스템 구축 회사에서 주로 웹 서비스를 개발하는 업무를 담당하였으며,
-                        개발자로 더 성장하고 싶은 열망을 가지고 이커머스 전문 플랫폼인 샵바이를 서비스하는 
-                        회사에서 백엔드 개발자로 재직하고 있습니다.
+                        공공 분야 대민 시스템 구축부터 대용량 트래픽을 처리하는 글로벌 이커머스 솔루션 플랫폼 개발까지 
+                        다양한 아키텍처 환경에서 백엔드 서비스를 안정적으로 구현하고 운영한 경험이 있습니다.
                     </p>
                     <p>
-                        3개의 대민 예약시스템을 런칭하였고, 다양한 공공기간 시스템을 개발하면서 데이터베이스 설계 및 운용, 관리 작업을 하였습니다. <br/>
-                        샵바이 플랫폼의 일본 서비스 및 한국 서비스 시스템을 개발하면서 다양한 기술을 적용하고 있습니다.
+                        대용량 트래픽 상황에서의 로컬 캐시 튜닝 및 임계치 기반 제어로 서비스 안정성을 강화하였으며, 
+                        수십 초가 소요되던 복잡한 데이터베이스 쿼리를 성능 튜닝하여 1초 미만으로 단축시켰습니다. 
+                        또한 분산 시스템 환경에서의 결제 멱등성 보장, 대용량 데이터 배치 안정화 및 보안 취약점 선제 개선을 주도했습니다.
                     </p>
 
                     <h3>핵심 역량</h3>
@@ -147,10 +147,12 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">NHN Cloud</span>
+                        <span class="skill-tag">Pinpoint APM</span>
+                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Linux</span>
                         <span class="skill-tag">Tomcat</span>
                         <span class="skill-tag">Paas-Ta</span>
-                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">GitLab CI/CD</span>
                         <span class="skill-tag">GitHub Actions</span>
                     </div>
@@ -187,6 +189,33 @@
         <div class="container">
             <h2 class="section-title">Career</h2>
             <div class="timeline">
+                <!-- NHN COMMERCE -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>NHN COMMERCE</h3>
+                        <p class="period">2023.01 - 2026.05 (3년 5개월)</p>
+                        <p class="position">샵바이개발실 / 샵바이주문파트 / 백엔드 개발자</p>
+                        <p class="description">국내 및 글로벌 대규모 이커머스 솔루션 플랫폼 백엔드 개발, 성능 최적화, 장애 대응 및 배치 안정화 담당</p>
+                        <ul class="work-list">
+                            <li><strong>플랫폼 성능 최적화 및 DB 쿼리 튜닝</strong>: MyBatis 및 QueryDSL 기반 데이터베이스 쿼리를 정밀 튜닝하여 16초 이상 소요되던 복잡한 쿼리를 1초 미만으로 단축하고, MySQL Gap Lock 이슈를 해결하여 데드락 리스크 차단</li>
+                            <li><strong>대규모 트래픽 무장애 대응</strong>: 아티스트 프로모션 등 평소 대비 10배 이상 트래픽이 폭증하는 상황에서 로컬 캐시(Caffeine) 튜닝 및 대기열 제어 시스템(NetFunnel) 연동으로 무장애 서비스 운영</li>
+                            <li><strong>결제 및 웹훅 시스템 신뢰성 강화</strong>: 외부 PG 연동 편의점 결제 등 504 게이트웨이 타임아웃 장애에 대응하기 위한 프록시 타임아웃 개선 및 멱등성(Idempotency) 로직 보장, 비동기 상태 변경 시의 웹훅 발행 안정성 구축</li>
+                            <li><strong>대규모 인프라 이전 및 보안 개선</strong>: 전체 13개 이커머스 서비스 모듈의 도메인 마이그레이션 및 DB 마이그레이션 통합 순차 배포 주도, Redis Sentinel 고가용성 클러스터 전환, MyBatis SQL Injection 취약점 등 핵심 보안 결함 10선 선제 발굴 및 해결</li>
+                            <li><strong>배치 파이프라인 고도화</strong>: 대량 데이터(1억 건 이상) 영구 파기 및 사은품/혜택 관련 배치 시스템 부하 분산, Jenkins 연동 오류 추적을 통한 PG 결제 실패 대기 주문 1,200건 자동 취소 정상화</li>
+                        </ul>
+                        <div class="milestones">
+                            <p><strong>2023.01</strong> - NHN COMMERCE 입사</p>
+                            <p><strong>2023.11</strong> - 클라우드 분산 캐시 시스템 고가용성 구조(Redis Sentinel) 구축 및 전환 완료</p>
+                            <p><strong>2024.06</strong> - 대형 프로모션 트래픽(10배 폭증) 대응 및 캐시 튜닝을 통한 CPU 부하 안정화</p>
+                            <p><strong>2024.07</strong> - 13개 전체 이커머스 서비스 모듈 도메인 및 DB 대규모 마이그레이션 1.5시간 내 배포 완수</p>
+                            <p><strong>2025.01</strong> - 주문 파트로 조직 이동 후 결제/배치 모니터링 체계 개선 및 해외 상점 대규모 마이그레이션 수행</p>
+                            <p><strong>2026.03</strong> - 서비스 전반 MyBatis SQL Injection 취약점 예방 및 10건 이상의 보안 결함 선제 개선</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ㈜인사이트정보 -->
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -220,6 +249,83 @@
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
+                <!-- NHN Commerce Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>이커머스 플랫폼 데이터베이스 및 캐시 최적화</h3>
+                        <span class="period">2023.01 - 2026.05</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="contribution">기여도: 90% | 인원: 2명</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MyBatis</span>
+                            <span>QueryDSL</span>
+                            <span>JPA</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>Pinpoint APM</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>관리자 주문/회원 검색 API 쿼리 튜닝으로 실행 속도를 16초/11초 대에서 1초 미만으로 단축</li>
+                            <li>MySQL REPEATABLE READ 격리 수준 내 범위 조건으로 인한 Gap Lock 예방을 위해 bulk update/delete 쿼리 개선 (IN절 바인딩)</li>
+                            <li>대규모 이벤트 트래픽 10배 폭증 시 메모리 구조에 기반하여 Caffeine 로컬 캐시 최대 크기를 증가 조정, 캐시 eviction 및 CPU 부하 안정화</li>
+                            <li>APM 트레이싱 기법을 이용한 외부 검색 엔진 API 병목 지점 해소 및 네트워크 트래픽 최적화</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NHN Commerce Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>결제 시스템 신뢰성 보장 및 웹훅 아키텍처 고도화</h3>
+                        <span class="period">2023.01 - 2026.05</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="contribution">기여도: 85% | 인원: 3명</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>JPA</span>
+                            <span>Kafka</span>
+                            <span>Nginx</span>
+                            <span>MySQL</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>외부 PG 통지 연동 간 504 Gateway Timeout 해결을 위한 프록시 설정 조율 및 멱등성(Idempotency) 보장 로직 구현</li>
+                            <li>비동기 주문 상태 변경 시 트랜잭션 동기화 한계로 누락되던 웹훅 발행 정합성 수정</li>
+                            <li>카프카 이벤트 발행 예외가 장바구니 등록 핵심 비즈니스 로직에 영향을 주는 현상을 차단하기 위해 try-catch 격리 및 약결합 리팩토링</li>
+                            <li>신용카드 3DS 보안 인증 기능 통합 연동, 외부 편의점 및 후불 결제 사양 전면 변경에 맞춰 API 응답 구조를 신속 리팩토링</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NHN Commerce Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>배치 시스템 안정화 및 13개 모듈 도메인 마이그레이션</h3>
+                        <span class="period">2023.01 - 2026.05</span>
+                    </div>
+                    <div class="project-body">
+                        <p class="contribution">기여도: 80% | 인원: 3명</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MongoDB</span>
+                            <span>Redis Sentinel</span>
+                            <span>Jenkins</span>
+                            <span>NHN Cloud</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>독자 브랜딩 통합에 따라 13개 전체 이커머스 서비스 모듈 및 데이터베이스 도메인 무중단 이전 및 통합 배포</li>
+                            <li>기존 단종 인프라 캐시에서 고가용성 구조의 Redis Sentinel 클러스터로 아키텍처 수립 및 전면 전환</li>
+                            <li>JPA 지연 로딩 예외(LazyInitializationException)로 비정상 완료되던 Jenkins 자동 취소 배치 프로세스의 오류 제어 방어 보강</li>
+                            <li>계약 종료 입점 상점의 1억 건 이상 대용량 정보 파기용 수동 삭제 배치 구축 및 물류 창고(WMS) 재고 불일치 원인 복구</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -368,97 +474,85 @@
     <!-- Achievements Section -->
     <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title">Recent Achievements (2023-2025)</h2>
+            <h2 class="section-title">Major Achievements (2023 - 2026)</h2>
 
-            <div class="achievement-year">
-                <h3 class="year-title">2023년</h3>
-                <div class="achievement-content">
-                    <div class="achievement-block">
-                        <h4>주요 업무</h4>
-                        <ul>
-                            <li>약 2만9천여건의 회원이 있는 쇼핑몰의 회원데이터 자사 일본향 이커머스 플랫폼에 마이그레이션</li>
-                            <li>자사 일본향 이커머스 플랫폼 고객사의 뉴진스 이벤트 모니터링 및 장애 대응</li>
-                            <li>자사 일본향 이커머스 플랫폼 데이터베이스에 이모지가 포함된 데이터 등록 장애 대응</li>
-                            <li>redis sentinel 신규 구축에 따른 자사 일본향 이커머스 플랫폼 코드 개선 및 모니터링</li>
-                        </ul>
-                    </div>
-                    <div class="achievement-block">
-                        <h4>성과</h4>
-                        <ul>
-                            <li>약 2만9천여건의 회원 정보를 자사 플랫폼 회원 테이블에 등록 및 외부 회원 연동 완료</li>
-                            <li>자사 일본향 이커머스 플랫폼 고객사 이벤트 진행 시 대용량 트래픽 대응 및 장애 대응</li>
-                            <li>이모지가 포함된 문자열이 오류가 나지 않도록 코드 개선 완료</li>
-                            <li>redis sentinel 구축 후 애플리케이션 운영 환경 연동 및 모니터링 완료</li>
-                        </ul>
-                    </div>
-                    <div class="achievement-block">
-                        <h4>업무관행 개선</h4>
-                        <ul>
-                            <li>GitHub 이슈 관리 체계화</li>
-                            <li>파트내 커밋 컨벤션 및 히스토리 관리 개선</li>
-                            <li>일본어로 된 프로젝트 워크플로우 개선</li>
-                        </ul>
-                    </div>
+            <!-- 실적 메트릭 요약 그리드 -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">80건+</div>
+                    <div class="metric-label">담당 업무(Assignee) 완료</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">60건+</div>
+                    <div class="metric-label">등록 업무(Creator) 완료</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">60건+</div>
+                    <div class="metric-label">프로덕션 배포 관리</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">10건+</div>
+                    <div class="metric-label">핵심 장애 긴급 대응</div>
                 </div>
             </div>
 
-            <div class="achievement-year">
-                <h3 class="year-title">2024년</h3>
-                <div class="achievement-content">
-                    <div class="achievement-block">
-                        <h4>주요 업무</h4>
-                        <ul>
-                            <li>자사 일본향 이커머스 플랫폼 전체 서버 클라우드 전환 대응 작업</li>
-                            <li>자사 일본향 이커머스 플랫폼 스프링 부트 버전 업그레이드 (1.5 → 2.X)</li>
-                            <li>자사 일본향 이커머스 플랫폼 사은품 증정 신규 기능 설계 및 개발</li>
-                            <li>Gradle 버전 업그레이드 작업</li>
-                        </ul>
+            <!-- 핵심 성과 영역 -->
+            <div class="achievement-categories">
+                <!-- 1. 성능 최적화 -->
+                <div class="achievement-category-card">
+                    <div class="category-header">
+                        <span class="category-icon">⚡</span>
+                        <h3>성능 최적화 및 캐시 개선</h3>
                     </div>
-                    <div class="achievement-block">
-                        <h4>성과</h4>
-                        <ul>
-                            <li>백엔드 모듈 전체 서버 클라우드 환경 이전 작업 완료</li>
-                            <li>스프링 부트 버전 1.5.4.RELEASE → 2.7.18 업그레이드 완료</li>
-                            <li>높은 트래픽 대응 및 서버 장애 모니터링 완료</li>
-                        </ul>
-                    </div>
-                    <div class="achievement-block">
-                        <h4>업무관행 개선</h4>
-                        <ul>
-                            <li>레포지토리 불필요 브랜치 및 PR 제거, 이슈 관리</li>
-                            <li>Task 히스토리 작성 개선 (문제 발생 → 원인 → 작업내용 → 이후 대응)</li>
-                        </ul>
-                    </div>
+                    <ul class="achievement-list">
+                        <li><strong>데이터베이스 쿼리 속도 대폭 단축</strong>: 16초 이상 소요되던 관리자 주문 검색 API 쿼리 및 11초 이상 소요되던 회원 검색 QueryDSL 쿼리를 튜닝(서브쿼리를 조인 및 EXISTS 구조로 변환, 인덱스 조건 최적화)하여 응답 속도를 1초 미만으로 단축</li>
+                        <li><strong>동시성 데드락(Gap Lock) 방지</strong>: REPEATABLE READ 격리 수준에서 범위 조건 사용 시 발생하는 갭 락으로 인한 데드락 리스크를 방어하기 위해, 특정 행만 타겟팅하는 IN 절 바인딩(MyBatis foreach) 방식으로 일괄 쿼리 개선</li>
+                        <li><strong>10배 급증 트래픽 무장애 제어</strong>: K-POP 아티스트 공식 굿즈 프로모션 시 힙 메모리 여유를 고려하여 Caffeine 로컬 캐시 최대 크기를 증가 조정함으로써 잦은 캐시 eviction 및 캐시 미스를 예방하고 CPU 부하 제거</li>
+                        <li><strong>외부 검색 API 병목 최적화</strong>: APM 도구를 활용한 요청 트레이싱 분석으로 외부 검색 API 호출 병목 구간을 식별하고, 불필요한 네트워크 라운드트립 제거</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="achievement-year">
-                <h3 class="year-title">2025년</h3>
-                <div class="achievement-content">
-                    <div class="achievement-highlight">
-                        <strong>조직 이동:</strong> 자사 한국 이커머스 플랫폼의 주문개발 팀으로 이동 (기존 일본향 플랫폼 업무도 병행)
+                <!-- 2. 결제 및 웹훅 시스템 -->
+                <div class="achievement-category-card">
+                    <div class="category-header">
+                        <span class="category-icon">💳</span>
+                        <h3>결제 시스템 및 웹훅 고도화</h3>
                     </div>
-                    <div class="achievement-block">
-                        <h4>주요 업무</h4>
-                        <ul>
-                            <li>자사 한국 이커머스 플랫폼 글로벌 상점 마이그레이션 대응 및 마이그툴 개선</li>
-                            <li>자사 한국 이커머스 플랫폼 회원, 운영, 주문 유지보수 및 문의 대응</li>
-                            <li>자사 일본향 이커머스 플랫폼 서비스 종료 고객사 데이터 일괄 삭제 배치 개발</li>
-                        </ul>
+                    <ul class="achievement-list">
+                        <li><strong>결제 장애 대응 및 멱등성 보장</strong>: 외부 PG 연동 통지 시 504 Gateway Timeout으로 인한 재시도(Retry) 장애에 대응하여, 프록시 대기 시간 조정 및 결제 대기 주문에 대한 멱등성 보장(성공 응답 반환) 로직으로 중복 장애 메일 차단</li>
+                        <li><strong>웹훅 유실 복구 및 예외 전파 차단</strong>: 비동기 주문 상태 변경 시 웹훅 발행이 누락되던 버그를 동기 전파 및 트랜잭션 동기화 보강으로 해결하고, 카프카 이벤트 발행 예외가 메인 비즈니스 로직(장바구니 등록) 실패로 전파되지 않도록 약결합 형태로 격리</li>
+                        <li><strong>결제 사양 전면 변경 신속 대응</strong>: 외부 신용카드 결제 보안 인증(3DS) 기능 추가 및 어드민 연동, 외부 편의점 및 후불 결제 사양 전면 개편에 맞춰 API 응답 구조를 신속하게 마이그레이션</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 장애 복구 및 정합성 제어 -->
+                <div class="achievement-category-card">
+                    <div class="category-header">
+                        <span class="category-icon">🚨</span>
+                        <h3>장애 긴급 대응 및 정합성 제어</h3>
                     </div>
-                    <div class="achievement-block">
-                        <h4>성과</h4>
-                        <ul>
-                            <li><strong>마이그툴 성능 개선:</strong> 데이터 추출 시간 1시간 → 5분 (90% 개선)</li>
-                            <li><strong>대용량 데이터 처리:</strong> 1억건 이상의 데이터 일괄 삭제 배치 개발 완료</li>
-                        </ul>
+                    <ul class="achievement-list">
+                        <li><strong>재고 정합성 장애 긴급 복구</strong>: 1,600여 건의 수동 출하 지시 배치 실행 후, 플랫폼 상태와 물류 창고 WMS 간의 재고 동기화 시점 차이로 발생한 대규모 과주문 장애 상황을 복구하고 정합성 검증 프로세스 구축</li>
+                        <li><strong>대형 프로모션 중 OOM 차단</strong>: 굿즈 발매 이벤트 모니터링 중 대용량 동영상 업로드 시도로 인한 OOM 장애를 방어하기 위해 파일 확장자 화이트리스트 및 업로드 용량 제한 사전 유효성 검증 적용</li>
+                        <li><strong>외부 네트워크 연동 지연 긴급 복구</strong>: 외부 채널 네트워크 지연으로 발생한 전체 검색 장애 상황을 조기 진단하고, 인터페이스 모듈 격리 및 무중단 재배포를 통해 장애 발생 10분 이내에 복구</li>
+                        <li><strong>멀티테넌트 개인정보 노출 방어</strong>: 다중 상점 환경에서 간헐적인 세션/캐시 식별자 혼선으로 타 상점 데이터가 유출되던 리스크에 대응해 데이터 조회 시 상점 ID(mall_no) 기반 격리 조건을 강화하여 보안 이슈 원천 차단</li>
+                    </ul>
+                </div>
+
+                <!-- 4. 배치 및 인프라 마이그레이션 -->
+                <div class="achievement-category-card">
+                    <div class="category-header">
+                        <span class="category-icon">⚙️</span>
+                        <h3>배치 파이프라인 및 인프라 마이그레이션</h3>
                     </div>
-                    <div class="achievement-block">
-                        <h4>업무관행 개선</h4>
-                        <ul>
-                            <li>기획팀 동료들과의 협업을 위한 마이그툴 로그 내용 개선</li>
-                        </ul>
-                    </div>
+                    <ul class="achievement-list">
+                        <li><strong>배치 콜백 실패 누적 데이터 해결</strong>: 도메인 변경 시 미작동하던 일부 모듈의 403 API 인증 실패 및 콜백 롤백으로 주기적 배치에 데이터가 누적 중복 발행되던 원인을 7일간 추적하여 재배포로 해결</li>
+                        <li><strong>13개 서비스 모듈 도메인 마이그레이션</strong>: 롤백 대안을 갖춘 통합 배포 시나리오를 설계하고, 전체 13개 독립 실행 백엔드 모듈의 도메인 및 DB 마이그레이션을 1.5시간 내에 무중단 완수</li>
+                        <li><strong>1,200건 방치 주문 자동 취소 복구</strong>: JPA 지연 로딩 예외(LazyInitializationException)로 런타임에 실패하던 자동 취소 배치에 대해, Entity Graph를 적용하여 예외를 잡고 Jenkins 프로세스 비정상 상태 코드를 반환하도록 모니터링 보완</li>
+                        <li><strong>Redis Sentinel 고가용성 캐시 구축</strong>: 기존 사용 중이던 인프라 캐시의 단동에 대비하여, 자동 페일오버를 보장하는 독자 고가용성 Redis Sentinel 클러스터를 신규 구축하고 무중단 세션 전환 완료</li>
+                        <li><strong>안전한 상점 대량 데이터 삭제 배치 개발</strong>: 계약이 만료된 글로벌 상점의 1억 건 이상 대용량 정보 파기 배치를 데이터베이스 리소스 과부하 없이 작동하도록 비차단 스케줄 기반으로 개발 및 실행 완료</li>
+                        <li><strong>이전 대상 데이터 단계적 정밀 가공</strong>: 글로벌 캐릭터 브랜드 서비스 종료에 따라 타 플랫폼 이관을 위해 3차에 걸쳐 수백만 건의 회원 정보, 상품 콘텐츠, 주문 이력을 규격에 맞게 정형화하여 성공적으로 이관 지원</li>
+                    </ul>
                 </div>
             </div>
         </div>
