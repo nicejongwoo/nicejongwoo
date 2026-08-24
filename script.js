@@ -333,3 +333,59 @@ console.log('%c안녕하세요! 👋', 'color: #2563eb; font-size: 24px; font-we
 console.log('%c이 포트폴리오를 확인해 주셔서 감사합니다.', 'color: #6b7280; font-size: 14px;');
 console.log('%c개발자 도구를 확인하시는군요! 좋습니다. 😊', 'color: #3b82f6; font-size: 14px;');
 console.log('%cGitHub: https://github.com/nicejongwoo', 'color: #10b981; font-size: 12px;');
+
+// Load and render Tech Blog Posts
+async function loadBlogPosts() {
+    const grid = document.getElementById('blogPostsGrid');
+    if (!grid) return;
+
+    try {
+        const res = await fetch('posts/posts.json');
+        if (!res.ok) throw new Error('Failed to load posts.json');
+        const posts = await res.json();
+
+        grid.innerHTML = '';
+        posts.forEach(post => {
+            const card = document.createElement('div');
+            card.className = 'project-card';
+            card.style.cssText = 'cursor: pointer; display: flex; flex-direction: column; justify-content: space-between;';
+
+            let tagHtml = '';
+            if (post.tags) {
+                tagHtml = post.tags.map(t => `<span>#${t}</span>`).join(' ');
+            }
+
+            card.innerHTML = `
+                <div>
+                    <div class="project-header">
+                        <span style="font-size: 11.5px; font-weight: 700; background: rgba(37, 99, 235, 0.1); color: var(--primary-color); padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 6px;">${post.category || 'Tech Guide'}</span>
+                        <h3 style="font-size: 1.15rem; margin-top: 4px; line-height: 1.4;">${post.title}</h3>
+                        <span class="period" style="margin-top: 4px; display: block;">📅 ${post.date} · ⏱️ ${post.readTime || '5 min'}</span>
+                    </div>
+                    <div class="project-body" style="padding-top: 10px;">
+                        <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 15px;">${post.description}</p>
+                        <div class="tech-stack" style="margin-bottom: 10px;">
+                            ${tagHtml}
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 12px; border-top: 1px solid var(--border-color); margin-top: 10px;">
+                    <a href="post.html?id=${post.id}" class="project-link" style="font-weight: 600;">글 읽기 (Read Post) →</a>
+                </div>
+            `;
+
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName !== 'A') {
+                    window.location.href = `post.html?id=${post.id}`;
+                }
+            });
+
+            grid.appendChild(card);
+        });
+    } catch (err) {
+        console.error('Error loading blog posts:', err);
+        grid.innerHTML = '<p style="color: var(--text-muted);">블로그 글을 준비 중입니다.</p>';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadBlogPosts);

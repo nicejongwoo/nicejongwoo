@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1-docker-dev-env-setup",
+    "title": "[Dev-Env] Docker를 활용한 로컬 백엔드 개발 & 테스트 환경 셋팅 가이드",
+    "description": "MySQL, PostgreSQL, Redis, Kafka를 docker-compose로 1분 만에 셋팅하고, 로컬 환경에서 깨끗하게 초기화 및 격리 테스트하는 실전 가이드입니다.",
+    "date": "2026-08-24",
+    "category": "Dev-Env",
+    "tags": ["Docker", "docker-compose", "MySQL", "Redis", "Kafka", "Backend"],
+    "file": "1-docker-dev-env-setup.md",
+    "readTime": "6 min"
+  },
+  {
+    "id": "2-ai-agent-fullstack",
+    "title": "[AI Coding] AI 에이전트와 협업하여 인터뷰 시뮬레이터 풀스택 서비스 구축하기",
+    "description": "interview-simulator 프로젝트를 개발하며 정립한 AI 에이전트 페어 프로그래밍 워크플로우, 프롬프트 엔지니어링 및 React + Spring Boot 연동 팁을 공유합니다.",
+    "date": "2026-08-23",
+    "category": "AI & Fullstack",
+    "tags": ["AI Agent", "Claude Code", "React", "Spring Boot", "Fullstack"],
+    "file": "2-ai-agent-fullstack.md",
+    "readTime": "8 min"
+  },
+  {
+    "id": "3-python-auto-bot",
+    "title": "[Automation] Python & API 기반 소셜 미디어 자동화 봇 및 파이프라인 설계",
+    "description": "thread-coupon-bot 및 auto-app 프로젝트에서 다룬 데이터 수집, 가공, 스케줄링 및 SNS API 연동 자동화 파이프라인 아키텍처와 예외 처리 노하우입니다.",
+    "date": "2026-08-22",
+    "category": "Automation",
+    "tags": ["Python", "Automation", "Bot", "API", "Scheduler"],
+    "file": "3-python-auto-bot.md",
+    "readTime": "7 min"
+  }
+]
