@@ -443,30 +443,36 @@
     <section id="achievements" class="achievements">
         <div class="container">
             <h2 class="section-title">Key Achievements</h2>
-            <div class="achievements-grid">
+            <div class="achievements-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
                 <div class="achievement-card">
                     <div class="achievement-icon">⚡</div>
                     <h3>마이그레이션 90% 성능 개선</h3>
                     <p class="achievement-stat">1시간 → 5분</p>
-                    <p class="achievement-desc">대량 데이터 추출 알고리즘 및 파일 생성 구조 리팩토링으로 추출 속도 90% 단축</p>
+                    <p class="achievement-desc">이기종 쇼핑몰 이전 툴 개발, 대량 추출 90% 개선, 20개+ 몰 무중단 이전 및 사전 검증 로직 내재화</p>
                 </div>
                 <div class="achievement-card">
-                    <div class="achievement-icon">🛡️</div>
-                    <h3>쇼핑몰 이전 장애 재발 0건</h3>
-                    <p class="achievement-stat">20개+ 몰 무중단 이전</p>
-                    <p class="achievement-desc">이전 직후 발생 가능한 인증 예외 원인을 분석하여 도구 내 사전 검증 로직으로 내재화</p>
+                    <div class="achievement-icon">🛒</div>
+                    <h3>이커머스 핵심 도메인 개발</h3>
+                    <p class="achievement-stat">주문·회원·운영</p>
+                    <p class="achievement-desc">실시간 주문/운영 웹훅 연동 및 데이터 정합성 보장, N+1 쿼리 최적화, 전사 보안 개선 및 KISA 규제 대응</p>
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">🚀</div>
-                    <h3>대규모 트래픽 무장애 대응</h3>
+                    <h3>글로벌 커머스 단독 운영</h3>
                     <p class="achievement-stat">최대 4.5K RPS</p>
-                    <p class="achievement-desc">대형 IP 발매 시 넷퍼넬 대기열 튜닝 및 Redis 캐시 최적화로 회당 수십만 트랜잭션 무장애 처리</p>
+                    <p class="achievement-desc">Spring Boot 메이저 버전업 및 클라우드 이전, 대형 프로모션 트래픽 무중단 대응 및 사업 종료 총괄</p>
                 </div>
                 <div class="achievement-card">
-                    <div class="achievement-icon">📦</div>
-                    <h3>대규모 프레임워크 마이그레이션</h3>
-                    <p class="achievement-stat">대규모 프레임워크 현대화 버전업</p>
-                    <p class="achievement-desc">Spring Boot 1.5 → 2.7 업그레이드 및 온프레미스 물리서버의 클라우드 무중단 이전</p>
+                    <div class="achievement-icon">🏛️</div>
+                    <h3>공공 대민 & 행정시스템</h3>
+                    <p class="achievement-stat">3개 시스템 런칭</p>
+                    <p class="achievement-desc">3개 지자체 대민 온라인 예약시스템 런칭, 경로당/건설정보 등 지자체 내부 행정업무시스템 현대화 및 운영</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🛡️</div>
+                    <h3>대용량 데이터 & 무장애</h3>
+                    <p class="achievement-stat">1억 건+ 데이터 파기</p>
+                    <p class="achievement-desc">종료 상점 1억 건 이상 데이터 안전 파기 배치 개발, AI 학습용 100만 건+ 데이터 구축 및 사전 검증 내재화</p>
                 </div>
             </div>
         </div>
