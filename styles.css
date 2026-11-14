@@ -159,8 +159,8 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 62vh;
+    padding: 7.5rem 0 4.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -944,3 +944,182 @@ section:not(#home) {
     }
 }
 
+
+
+/* Section Subtitle */
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: -2rem;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* Experience Header */
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.period-badge {
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+
+/* Competencies Section (jojoldu style) */
+.competencies {
+    background-color: var(--bg-primary);
+}
+
+.competency-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.competency-block {
+    background-color: var(--bg-secondary);
+    padding: 2rem 2.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.competency-header {
+    margin-bottom: 1.15rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.competency-header h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.competency-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.competency-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.65rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.competency-list li:last-child {
+    margin-bottom: 0;
+}
+
+.competency-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.comp-period {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.env-badge {
+    display: inline-block;
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-right: 0.35rem;
+    vertical-align: baseline;
+}
+
+.competency-list code,
+.project-details code {
+    background-color: var(--bg-primary);
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    font-size: 0.85em;
+    border: 1px solid var(--border-color);
+}
+
+/* Contact Cards alignment */
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-secondary);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+
+.contact-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.contact-value {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+@media print {
+    .navbar, .hero-buttons, .scroll-top-btn, .theme-toggle {
+        display: none !important;
+    }
+    section {
+        padding: 1.5rem 0 !important;
+    }
+    .hero {
+        min-height: auto !important;
+        padding: 1rem 0 !important;
+    }
+}

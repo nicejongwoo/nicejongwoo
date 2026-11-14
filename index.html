@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="이종우 - Java, Kotlin, Spring 기반의 7년차 웹 백엔드 개발자 포트폴리오">
-    <title>이종우 | Backend Developer Portfolio</title>
+    <meta name="description" content="이종우 - Java, Kotlin, Spring 기반의 7년차 백엔드 엔지니어 포트폴리오">
+    <title>이종우 | 서버 백엔드 엔지니어</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,10 +19,10 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#career" class="nav-link">Career</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#competencies" class="nav-link">Competencies</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="hamburger" id="hamburger">
@@ -36,16 +36,17 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content fade-in">
+            <div class="hero-content">
                 <h1 class="hero-title">이종우</h1>
-                <h2 class="hero-subtitle">LEE JONG WOO</h2>
+                <h2 class="hero-subtitle">서버 백엔드 엔지니어</h2>
                 <p class="hero-description">
-                    공공 행정 서비스부터 대용량 멀티테넌트 이커머스 SaaS까지,<br>
-                    시스템 현대화와 대규모 데이터 처리를 주도해 온 7년차 백엔드 개발자입니다.
+                    멀티테넌트 이커머스 솔루션과 공공 웹 시스템에서<br>
+                    레거시 시스템 리팩토링·마이그레이션과 대용량 데이터 처리를 수행해 온 7년차 백엔드 개발자입니다.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#competencies" class="btn btn-primary">핵심 역량 보기</a>
                     <a href="https://github.com/nicejongwoo" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="mailto:leejongwoo.dev@gmail.com" class="btn btn-secondary">Email</a>
                 </div>
             </div>
         </div>
@@ -58,32 +59,21 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        <strong>공공 행정 서비스부터 멀티테넌트 이커머스 SaaS 「샵바이」까지, 7년간 시스템 현대화와 대규모 데이터 처리를 주도해 온 백엔드 개발자입니다.</strong>
+                        <strong>Java &amp; Kotlin, Spring 기반의 7년차 서버 백엔드 개발자</strong>로 멀티테넌트 이커머스 솔루션(샵바이·샵바이 JP)과 공공 웹 시스템에서 백엔드 플랫폼 개발, 레거시 개편, 클라우드·컨테이너 인프라 운영을 해왔습니다.
                     </p>
                     <p>
-                        커머스 데이터 마이그레이션 플랫폼을 전담 개발하여 회원 추출 시간을 1시간대에서 5분대로 단축(회원 도메인 전체 이전 2시간대 → 30분대)하고 20개 이상의 엔터프라이즈급 상점 이전을 완수했습니다. 또한 샵바이 주문·회원·운영 핵심 도메인 개발을 통해 웹훅 비동기 격리와 장애 전파 차단체계를 구축했습니다.
+                        엔터프라이즈급 쇼핑몰 다수의 <strong>대용량 데이터 마이그레이션 플랫폼 개발 및 운영</strong>을 전담하고 있으며, 억 단위 규모 운영 데이터의 야간 분산 배치 파기, 약 1천만 건 이상 접속기록의 TTL 자동 파기 전환, 프레임워크 메이저 버전 마이그레이션 및 온프레미스 서버의 클라우드 이전을 수행했습니다.
                     </p>
                     <p>
-                        일본향 커머스 플랫폼(샵바이 JP) 개발·운영 전담, 복합 멀티모듈 Spring Boot 1.x → 2.x 버전업 및 클라우드 이전을 공동 주도했으며, 억 단위 규모의 운영 DB 누적 데이터를 무장애 분산 배치로 안전하게 파기 완료(최종 잔량 0)했습니다.
+                        개인이 하고 싶은 개발보다 <strong>서비스의 안정성과 팀의 운영 병목을 줄이는 개발</strong>을 우선시합니다. 프로덕션 반영 전 로컬 Docker(MySQL·Kafka) 환경에서 대용량 적재 정합성을 사전 검증하고, 비개발 직군이 직접 원본 파일 행 번호 기준으로 오류 데이터를 보정할 수 있도록 검증 파이프라인을 개선해 전체 이전 리드타임을 줄여왔습니다.
                     </p>
-
-                    <h3>핵심 역량</h3>
-                    <ul class="key-strengths">
-                        <li><strong>안정적인 서비스 운영 & 레거시 현대화</strong>: 입사 초기 5개월간 일본향 플랫폼 운영을 전담하였으며, Spring Boot 1.x → 2.x 버전업 및 인프라 클라우드 이전을 완수했습니다. Struts 기반 공공 행정 레거시를 Spring Boot REST API 및 React SPA로 전면 전환했습니다.</li>
-                        <li><strong>대용량 데이터 및 트래픽 처리</strong>: 조회 구조 개선을 통한 마이그레이션 플랫폼 회원 추출 시간 단축(1시간대 → 5분대), 대형 프로모션 트래픽(평소 대비 10배) 캐시 튜닝 및 유입 제어 대응, 억 단위 규모 데이터의 무장애 분산 삭제 배치를 주도 및 완수했습니다.</li>
-                        <li><strong>철저한 사전 검증 & 실험 환경 구축</strong>: 로컬 Docker 환경에서 운영과 동일한 MySQL/Kafka 테스트 베드를 구축하여 프로덕션 배포 전 E2E 사전 검증을 수행함으로써 배포 리스크를 최소화합니다.</li>
-                        <li><strong>비개발 직군과의 협업 및 툴 개선</strong>: 표준 CSV 사전 검증 파이프라인을 개선하여 데이터 검증 실행 시 실패 로그 로깅과 함께 원본 CSV 기준 행 번호와 실패 사유를 화면에 출력함으로써 이전 파트(비개발자)의 자체 데이터 보정을 지원하고 전체 마이그레이션 시간을 단축했습니다.</li>
-                    </ul>
-
-                    <h3>엔지니어링 철학</h3>
-                    <p>시스템 가용성과 데이터 정합성을 엔지니어링의 최우선 가치로 두며, '문제를 어떻게 시스템과 도구로 해결하여 재발을 막을 것인가?'를 끊임없이 고민합니다. 아는 지식은 엄격히 검증하고, 새로운 기술은 다각도 교차 검증과 직접 구현하는 실측(Benchmark) 데이터를 바탕으로 최적의 아키텍처를 결정합니다.</p>
                 </div>
                 <div class="about-info">
                     <div class="info-card">
                         <h3>Education</h3>
                         <div class="info-item">
                             <strong>동의대학교</strong>
-                            <p>경영학과 학사 졸업 (평점 4.41 / 4.5)</p>
+                            <p>경영학과 학사 졸업</p>
                             <p class="period">2008.03 - 2017.02</p>
                         </div>
                         <div class="info-item">
@@ -93,7 +83,7 @@
                         </div>
                     </div>
                     <div class="info-card">
-                        <h3>Certifications & Language</h3>
+                        <h3>Certifications &amp; Language</h3>
                         <ul>
                             <li><strong>정보처리기사</strong> (2018.08, 한국산업인력공단)</li>
                             <li><strong>회계관리 2급</strong> (2016.09, 삼일회계법인)</li>
@@ -105,100 +95,29 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Experience Section -->
+    <section id="experience" class="career">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Back-End & Language</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Kotlin</span>
-                        <span class="skill-tag">Spring Boot (1.x ~ 3.x)</span>
-                        <span class="skill-tag">WebFlux</span>
-                        <span class="skill-tag">Spring Batch</span>
-                        <span class="skill-tag">Spring Security</span>
-                        <span class="skill-tag">Apache Kafka</span>
-                        <span class="skill-tag">RESTful API</span>
-                        <span class="skill-tag">Coroutines</span>
-                        <span class="skill-tag">Python</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Access & Database</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Spring Data JPA</span>
-                        <span class="skill-tag">QueryDSL</span>
-                        <span class="skill-tag">jOOQ</span>
-                        <span class="skill-tag">MyBatis</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MariaDB</span>
-                        <span class="skill-tag">Tibero</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps & Cloud</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">GitLab CI/CD</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">Tomcat</span>
-                        <span class="skill-tag">PaaS-TA</span>
-                        <span class="skill-tag">NHN Cloud</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Front-End</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React (SPA)</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5 / CSS3</span>
-                        <span class="skill-tag">eGov Framework</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & AI</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Claude Code</span>
-                        <span class="skill-tag">Antigravity(agy)</span>
-                        <span class="skill-tag">Orca</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">IntelliJ IDEA</span>
-                        <span class="skill-tag">Git / GitHub</span>
-                        <span class="skill-tag">Gradle / Maven</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Career Section -->
-    <section id="career" class="career">
-        <div class="container">
-            <h2 class="section-title">Career</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <!-- NHN COMMERCE -->
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>엔에이치엔커머스㈜ (NHN COMMERCE)</h3>
-                        <p class="period">2023.05 - 현재 (3년 4개월)</p>
-                        <p class="position">커머스 플랫폼 / 백엔드 개발자 (대리)</p>
-                        <p class="description">멀티테넌트 이커머스 SaaS 플랫폼 「샵바이(shopby)」 및 일본 커머스 시스템 백엔드 개발 및 운영</p>
+                        <div class="experience-header">
+                            <div>
+                                <h3>엔에이치엔커머스㈜ (NHN COMMERCE)</h3>
+                                <p class="position">커머스 플랫폼 / 백엔드 개발자 (대리)</p>
+                            </div>
+                            <span class="period-badge">2023.05 ~ 현재</span>
+                        </div>
+                        <p class="description">멀티테넌트 이커머스 솔루션 「샵바이(shopby)」 및 일본향 이커머스 플랫폼 백엔드 개발·운영</p>
                         <ul class="work-list">
-                            <li><strong>커머스 데이터 마이그레이션 플랫폼 전담 개발 및 성능 개선</strong>: 타사 쇼핑몰 데이터 추출(Python/Flask) → 샵바이 표준 적재(Kotlin/Spring Boot) 툴 전담 개발 및 <strong>Spring Boot 2.x → 3.x 메이저 업그레이드 주도 및 완수</strong>, 회원 추출 시간 <strong>1시간대 → 5분대로 단축</strong> (회원 전체 이전 2시간대 → 30분대), 20개 이상 엔터프라이즈급 상점 이전 대응</li>
-                            <li><strong>데이터 검증 단계 개선</strong>: 검증 실패 시 원본 행 번호·사유를 화면에 출력해 이전 파트(비개발자)의 데이터 검수 및 전체 마이그레이션 시간 단축</li>
-                            <li><strong>샵바이 코어 도메인(회원·주문·운영) 백엔드 개발</strong>: 이상 징후 알림 기능 개발, 웹훅 비동기 격리 및 재시도 체계 구축으로 외부 장애 전파 차단, 재시도 경로 분리로 부하 전파 차단</li>
-                            <li><strong>샵바이 JP (일본향) 인수·운영 및 인프라 현대화</strong>: 입사 초기 5개월간 개발·운영 전담, <strong>Spring Boot 1.x → 2.x 단계적 버전업</strong> 및 클라우드 이전 공동 주도, 일본 현지 3-D Secure 카드결제 규제 대응</li>
-                            <li><strong>대용량 데이터 파기</strong>: 운영 DB 영향 없이 새벽 분산 배치로 <strong>억 단위 규모 누적 데이터 무장애 삭제 주도 및 완수 (최종 잔량 0)</strong></li>
+                            <li>엔터프라이즈급 쇼핑몰 다수의 대용량 데이터 마이그레이션 플랫폼 전담 개발·운영 및 프레임워크 메이저 버전업</li>
+                            <li>샵바이 회원·주문·운영 도메인 백엔드 개발, 외부 연동 웹훅 비동기 격리 및 재시도 경로 분리</li>
+                            <li>문자사업자 전송자격인증제 대응 및 본인인증 정보 분리보관·파기 배치 설계</li>
+                            <li>일본향 플랫폼(샵바이 JP) API·어드민 개발·운영, Spring Boot 메이저 버전업 및 클라우드 컨테이너 마이그레이션</li>
+                            <li>억 단위 규모 운영 데이터의 야간 분산 배치 파기 (최종 잔량 0 확인)</li>
                         </ul>
                     </div>
                 </div>
@@ -207,19 +126,88 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>㈜인사이트정보 (INSIGHT INFO)</h3>
-                        <p class="period">2018.10 - 2022.12 (4년 3개월)</p>
-                        <p class="position">IT사업본부 / 대리</p>
-                        <p class="description">시스템통합(SI), 공공 웹서비스, 공간정보시스템 및 AI 학습용 데이터 구축 전문 IT 기업</p>
+                        <div class="experience-header">
+                            <div>
+                                <h3>㈜인사이트정보 (INSIGHT INFO)</h3>
+                                <p class="position">IT사업본부 / 백엔드 개발자 (대리)</p>
+                            </div>
+                            <span class="period-badge">2018.10 ~ 2022.12</span>
+                        </div>
+                        <p class="description">시스템통합(SI), 공공 웹서비스, 공간정보시스템 및 AI 학습용 데이터 구축 IT 기업</p>
                         <ul class="work-list">
-                            <li><strong>경로당 관리 시스템 전면 고도화</strong>: Struts 레거시 시스템을 <strong>Spring Boot REST API 및 React SPA로 전면 전환</strong> 완수, 생체 건강(혈당·혈압·요검사) 측정 기록 관리 및 모니터링 API 구현</li>
-                            <li><strong>건설정보관리시스템 K8s 클러스터 운영 및 CI/CD 환경 구축</strong>: K8s 인프라 인수 후 1년간 전담 운영, 기존 파이프라인 분석을 통한 사내 개발 서버 GitLab CI/CD 구축 및 사내 기술 교육 진행</li>
-                            <li><strong>긴급 재난지원금 운영 서버 환경 구축 전담</strong>: 양산시민 약 30만 명 대상 시스템의 Linux 배포 환경 및 DB 구축, 로컬 환경 재현을 통한 Spring Application Context 버전 충돌 이슈 신속 해결</li>
-                            <li><strong>대운산 생태휴양밸리 온라인 예약 시스템 구축</strong>: 체험 프로그램 예약 관리 DB 설계, 본인인증 로그인 및 서버 환경 구축·배포</li>
-                            <li><strong>아동보호관리시스템 PaaS-TA 클라우드 이전</strong>: 공공 클라우드 이전에 맞춘 코드 개선, JDK/Spring 버전 업그레이드 및 Tibero DB 마이그레이션 주도</li>
-                            <li><strong>환경오염 AI 학습용 데이터 구축</strong>: 100만 건 이상 검수 데이터 운용, 통계 집계 쿼리 최적화 및 크라우드소싱 작업 배분 기능 개발</li>
+                            <li>경로당 관리 시스템 레거시 분석·고도화 개발 주도 (Spring Boot REST API &amp; React SPA 전환)</li>
+                            <li>건설정보관리시스템 Kubernetes 클러스터 단독 운영·유지보수, 사내 스테이징 GitLab CI 구축 및 사내 교육</li>
+                            <li>아동보호 관리시스템 PaaS-TA 클라우드 마이그레이션, 프레임워크 버전업 및 DB 마이그레이션</li>
+                            <li>환경오염 AI 학습용 데이터(약 100만 건 이상) 검수 DB 운영, 추출·통계 쿼리 작성 및 크라우드소싱 기능 개발</li>
+                            <li>재난지원금 운영 서버 및 다수 공공 웹 시스템의 Linux·DB·Tomcat 환경 구축 및 배포</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies (역량) Section -->
+    <section id="competencies" class="competencies">
+        <div class="container">
+            <h2 class="section-title">역량 (Competencies)</h2>
+            <div class="competency-categories">
+                <!-- 1. 레거시 시스템 리팩토링/리엔지니어링 -->
+                <div class="competency-block">
+                    <div class="competency-header">
+                        <h3>레거시 시스템 리팩토링/리엔지니어링</h3>
+                    </div>
+                    <ul class="competency-list">
+                        <li>샵바이 마이그레이션 서버 Spring Boot 메이저 버전업 및 상품 DB 분리 개편 <span class="comp-period">(2025.10 ~ 2026.02)</span></li>
+                        <li>샵바이 JP 전체 시스템 Spring Boot 메이저 버전 마이그레이션 <span class="comp-period">(2023.12 ~ 2024.06)</span></li>
+                        <li>샵바이 JP 물리 서버 -&gt; 클라우드 컨테이너 마이그레이션 <span class="comp-period">(2023.12 ~ 2024.04)</span></li>
+                        <li>경로당 관리 시스템 레거시 개편 (Spring Boot REST API &amp; React SPA 전환) <span class="comp-period">(2022.06 ~ 2022.10)</span></li>
+                        <li>아동보호 관리시스템 PaaS-TA 클라우드 마이그레이션 및 프레임워크 버전업 <span class="comp-period">(2020.09 ~ 2020.10)</span></li>
+                    </ul>
+                </div>
+
+                <!-- 2. 대용량 데이터 처리 및 성능 개선 -->
+                <div class="competency-block">
+                    <div class="competency-header">
+                        <h3>대용량 데이터 처리 및 성능 개선</h3>
+                    </div>
+                    <ul class="competency-list">
+                        <li>엔터프라이즈급 쇼핑몰 다수의 대용량 데이터 마이그레이션 플랫폼 개발 및 운영</li>
+                        <li>억 단위 규모 운영 데이터의 야간 분산 배치 파기</li>
+                        <li>약 1천만 건 이상 개인정보 접속기록의 MongoDB TTL 기반 자동 파기 전환</li>
+                        <li>약 100만 건 이상 마이그레이션 누적 로그 테이블 실행계획 분석 및 분할 삭제</li>
+                        <li>약 100만 건 이상 AI 검수 데이터 분류 및 검수 DB 운영·추출 쿼리 튜닝</li>
+                        <li>대용량 회원 추출 쿼리·로직 튜닝 (시간 단위 -&gt; 분 단위 단축)</li>
+                        <li>대용량 상점 이전 시 OOM 해소 및 임시 비밀번호 암호화 처리 속도 개선</li>
+                    </ul>
+                </div>
+
+                <!-- 3. 견고한 데이터 구조 및 보안·도메인 설계 -->
+                <div class="competency-block">
+                    <div class="competency-header">
+                        <h3>견고한 데이터 구조 및 보안·도메인 설계</h3>
+                    </div>
+                    <ul class="competency-list">
+                        <li>문자사업자 전송자격인증제 대응을 위한 발신 권한 게이트·2차 인증·세션 무효화 설계</li>
+                        <li>본인인증 정보의 몰×계정 단위 분리보관 및 역할별 파기 배치 2단계 배포 구조 설계</li>
+                        <li>비동기 재시도 경로 분리 및 데드락 방지를 통한 대량 데이터 삭제 파이프라인 개선</li>
+                        <li>외부 연동 웹훅 확장 및 발행 실패가 API 응답에 전파되지 않는 격리 구조 개선</li>
+                        <li>주문 계열 멀티모듈 MyBatis 바인딩 전면 정비(<code>${}</code> -&gt; <code>#{}</code>) 및 인증 토큰 재발급 원자성 보장</li>
+                        <li>대량 데이터 이전 정합성 보장을 위한 매핑·유효성 검증 체계 보강</li>
+                    </ul>
+                </div>
+
+                <!-- 4. 온프레미스(Linux) 및 클라우드·K8s 인프라 운영 관리 -->
+                <div class="competency-block">
+                    <div class="competency-header">
+                        <h3>온프레미스(Linux) 및 클라우드·K8s 인프라 운영 관리</h3>
+                    </div>
+                    <ul class="competency-list">
+                        <li><span class="env-badge">K8s</span> 건설정보관리시스템 Kubernetes 환경 단독 운영·유지보수 및 사내 교육</li>
+                        <li><span class="env-badge">CI/CD</span> 사내 스테이징 서버 GitLab CI 배포 파이프라인 구성</li>
+                        <li><span class="env-badge">Cloud</span> 클라우드 컨테이너 전환 대상 모듈 정의 및 Redis Sentinel 순차 배포</li>
+                        <li><span class="env-badge">Linux</span> 재난지원금 및 다수 공공 웹 시스템의 Linux·DB·Tomcat 서버 환경 구축 및 배포</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -228,45 +216,43 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Key Projects</h2>
             <div class="projects-grid">
                 <!-- NHN Commerce Project 1: 마이그레이션 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>커머스 데이터 마이그레이션 플랫폼 개발 및 성능 개선</h3>
-                        <span class="period">2025.01 - 현재</span>
+                        <h3>커머스 데이터 마이그레이션 플랫폼 개발·운영</h3>
+                        <span class="period">2025.01 ~ 현재</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 100% (1인 전담) | NHN COMMERCE</p>
+                        <p class="contribution">인수 후 전담 (개발·운영·이전 실행) | NHN COMMERCE</p>
                         <div class="tech-stack">
                             <span>Kotlin</span>
                             <span>Coroutines</span>
-                            <span>Spring Boot 2.x → 3.x</span>
+                            <span>Spring Boot</span>
                             <span>Python</span>
-                            <span>Flask</span>
                             <span>Kafka</span>
                             <span>MySQL</span>
                             <span>Docker</span>
                         </div>
                         <ul class="project-details">
-                            <li>타사 쇼핑몰 데이터 추출(Python/Flask) → 샵바이 표준 적재(Kotlin/Spring Boot) 마이그레이션 플랫폼 전담 개발 및 운영</li>
-                            <li>마이그레이션 적재 시스템 <strong>Spring Boot 2.x → 3.x 메이저 버전 업그레이드</strong> 주도 및 완수, 의존성 현대화</li>
-                            <li>회원 추출 조회 구조 개선: 중첩 루프·건별 조회를 Map 인덱싱과 청크 단위 처리로 전환하여 수십만 건 회원 추출 시간 <strong>1시간대 → 5분대로 단축</strong> (회원 도메인 전체 이전 2시간대 → 30분대)</li>
-                            <li><strong>20개 이상의 엔터프라이즈급 대형 상점</strong> 샵바이 안정적 이전 대응</li>
-                            <li><strong>데이터 검증 단계 개선</strong>: 검증 실패 시 원본 행 번호·사유를 화면에 출력해 이전 파트(비개발자)의 데이터 검수 및 전체 마이그레이션 시간 단축</li>
-                            <li>Docker 로컬 격리 환경(MySQL, Kafka) 구축으로 운영 DB 반영 전 적재 결과 및 정합성 사전 검증</li>
+                            <li>타사 쇼핑몰 데이터 추출(Python) 및 샵바이 표준 적재(Kotlin/Spring Boot) 플랫폼 개선·장애 대응·모니터링 전담</li>
+                            <li>마이그레이션 서버 <strong>Spring Boot 메이저 버전 업그레이드</strong> 및 상품 DB 분리 개편 대응</li>
+                            <li>회원 추출 조회 로직 개선으로 대량 회원 추출 소요 시간을 <strong>시간 단위에서 분 단위로 단축</strong></li>
+                            <li>대용량 상점 이전 시 발생하던 OOM 해소, 임시 비밀번호 암호화 처리 속도 개선 및 약 100만 건 이상 누적 로그 분할 정리</li>
+                            <li>오류 행 번호를 실제 원본 행에 맞춰 출력하도록 검증 체계를 보강하여 비개발 직군의 자체 데이터 보정 지원</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- NHN Commerce Project 2: 주문/회원/코어 -->
+                <!-- NHN Commerce Project 2: 회원·주문·운영 코어 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>샵바이 코어 회원·주문·운영 도메인 개발</h3>
-                        <span class="period">2025.08 - 현재</span>
+                        <h3>샵바이 회원·주문·운영 도메인 개발 및 규제 대응</h3>
+                        <span class="period">2025.08 ~ 현재</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 30% (파트 협업) | NHN COMMERCE</p>
+                        <p class="contribution">도메인 과제 담당 | NHN COMMERCE</p>
                         <div class="tech-stack">
                             <span>Kotlin</span>
                             <span>Coroutines</span>
@@ -278,11 +264,11 @@
                             <span>MongoDB</span>
                         </div>
                         <ul class="project-details">
-                            <li>회원·주문·운영 중심의 SaaS 코어 도메인 백엔드 API 개발 및 운영</li>
-                            <li>회원·주문 도메인 <strong>이상 징후 알림 기능 개발</strong></li>
-                            <li>웹훅 신규 개발·개선 및 비동기 격리·재시도 체계 구축으로 외부 연동 장애가 본 시스템에 전파되지 않도록 방어 아키텍처 확보</li>
-                            <li><strong>재시도 경로 분리</strong>로 타 도메인 부하 전파 차단</li>
-                            <li>회원·주문·운영 도메인 상점 문의 대응 및 무장애 정기 배포 수행</li>
+                            <li><strong>문자사업자 전송자격인증제 대응</strong>: 발신 권한 게이트, 2차 인증, 접속기록 발행, 휴대폰 변경 시 세션 무효화 설계 및 구현</li>
+                            <li><strong>본인인증 정보 분리보관 및 파기</strong>: 몰×계정 단위 분리보관, 역할별 파기 배치 및 2단계 순차 배포 구조 구현</li>
+                            <li><strong>약 1천만 건 이상 개인정보 접속기록 자동 파기</strong>: 보관기간 경과분을 MongoDB TTL 인덱스 기반 삭제로 전환</li>
+                            <li><strong>대량 삭제 파이프라인 개선</strong>: 비동기 재시도 경로 분리 및 DB 데드락 방지 로직 개선</li>
+                            <li>외부 연동 웹훅 확장 및 발행 실패가 API 응답에 전파되지 않는 격리 구조 개선, 주문 계열 MyBatis 바인딩(<code>#{}</code>) 전면 정비</li>
                         </ul>
                     </div>
                 </div>
@@ -290,28 +276,28 @@
                 <!-- NHN Commerce Project 3: 샵바이 JP -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>샵바이 JP (일본향) 개발·운영 및 데이터 파기</h3>
-                        <span class="period">2023.05 - 2026.08</span>
+                        <h3>샵바이 JP (일본향) 플랫폼 현대화 및 데이터 파기</h3>
+                        <span class="period">2023.05 ~ 2026.08</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 50% (2명) | NHN COMMERCE</p>
+                        <p class="contribution">공동 담당 (데이터 파기·Sentinel 전환 등 단독) | NHN COMMERCE</p>
                         <div class="tech-stack">
                             <span>Java</span>
-                            <span>Spring Boot 1.x → 2.x</span>
+                            <span>Spring Boot</span>
                             <span>Spring Batch</span>
-                            <span>MyBatis</span>
                             <span>Spring Data JPA</span>
+                            <span>QueryDSL</span>
+                            <span>MyBatis</span>
                             <span>Redis</span>
                             <span>MySQL</span>
                             <span>Docker</span>
                         </div>
                         <ul class="project-details">
-                            <li>입사 초기 <strong>5개월간 일본향 이커머스 플랫폼 API 및 어드민 개발·운영 책임 전담</strong></li>
-                            <li>인프라 환경 클라우드 마이그레이션 및 <strong>복합 멀티모듈 Spring Boot 1.x → 2.x 단계적 버전업</strong> 공동 진행</li>
-                            <li>일본 현지 3-D Secure 카드결제 보안 규제 대응 결제 분기 구현</li>
-                            <li>재고 정합성 개선 및 재고 이력 구조 개선</li>
-                            <li>운영 DB <strong>억 단위 규모 누적 데이터의 무장애 배치 분산 삭제</strong> 주도 및 완수 (최종 잔량 0)</li>
-                            <li>대형 프로모션 트래픽(평소 대비 10배 이상) 집중 시 캐시 튜닝 및 유입 제어로 무장애 서빙 완수</li>
+                            <li>일본향 이커머스 플랫폼 쇼핑몰 API·어드민 개발 및 운영 유지보수</li>
+                            <li>보안 취약점 대응 및 레거시 개편을 위한 <strong>전체 시스템 Spring Boot 메이저 버전 마이그레이션</strong></li>
+                            <li>온프레미스 물리 서버에서 <strong>클라우드 컨테이너 환경으로의 인프라 이전</strong></li>
+                            <li><strong>억 단위 규모 운영 데이터 삭제</strong>: 인계 배치 오류 수정 및 야간 분산 실행으로 잔량 0 확인</li>
+                            <li>일본 카드결제 3-D Secure(3DS) 인증 연동, 재고 정합성·이력 구조 개선, Redis Sentinel 접속 전환 배포</li>
                         </ul>
                     </div>
                 </div>
@@ -319,11 +305,11 @@
                 <!-- Insight Project 1: 경로당 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>경로당 관리 시스템 전면 고도화</h3>
-                        <span class="period">2022.06 - 2022.10</span>
+                        <h3>경로당 관리 시스템 레거시 고도화</h3>
+                        <span class="period">2022.06 ~ 2022.10</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 80% (4명) | ㈜인사이트정보</p>
+                        <p class="contribution">개발 주도 (요구사항·API·SPA 전반) | ㈜인사이트정보</p>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring Boot</span>
@@ -335,11 +321,10 @@
                             <span>MariaDB</span>
                         </div>
                         <ul class="project-details">
-                            <li>요구사항 분석, ERD 모델링, REST API 설계 및 백엔드 개발 전 과정 주도</li>
-                            <li>노후화된 Struts 레거시 시스템을 <strong>Spring Boot REST API와 React 반응형 SPA로 프론트·백엔드 분리 전면 전환</strong></li>
-                            <li>혈당·혈압·요검사 등 생체 건강 측정 데이터 기록 관리 및 실시간 이상 수치 모니터링·통계 API 고도화</li>
-                            <li>Spring Security + JWT 기반 관리자·전담 코디네이터·일반사용자 3단계 권한 체계 및 휴대폰 본인인증 연동</li>
-                            <li>기존 DB 데이터의 안정적 마이그레이션 수행 및 무장애 오픈 완료</li>
+                            <li>관리자·업무담당자 미팅을 통한 요구사항 정리 및 기존 레거시 시스템 분석</li>
+                            <li>레거시 웹 시스템을 <strong>Spring Boot REST API 및 React 반응형 SPA 구조로 전면 개편</strong></li>
+                            <li>관리자·업무담당자·일반사용자 권한 구분 및 휴대폰 본인인증 기반 로그인 구현</li>
+                            <li>전체 업무 기능 오류 수정, 레거시 데이터 마이그레이션 및 운영 유지보수 수행</li>
                         </ul>
                     </div>
                 </div>
@@ -347,37 +332,36 @@
                 <!-- Insight Project 2: K8s -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>건설정보관리시스템 K8s 클러스터 운영 & CI/CD 환경 구축</h3>
-                        <span class="period">2022.01 - 2022.12</span>
+                        <h3>건설정보관리시스템 K8s 운영 &amp; CI/CD 구축</h3>
+                        <span class="period">2022.01 ~ 2022.12</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 100% (1인 전담) | ㈜인사이트정보</p>
+                        <p class="contribution">단독 운영·유지보수 | ㈜인사이트정보</p>
                         <div class="tech-stack">
                             <span>Kubernetes</span>
                             <span>Docker</span>
-                            <span>GitLab CI/CD</span>
+                            <span>GitLab CI</span>
                             <span>Nginx</span>
                             <span>PostgreSQL</span>
                             <span>Spring Boot</span>
                             <span>React</span>
                         </div>
                         <ul class="project-details">
-                            <li>담당자 부재 상황에서 Kubernetes 기반 시스템 운영 인프라를 책임 인수하여 1년간 전담 운영</li>
-                            <li>기존 운영 배포 파이프라인 구조를 분석·학습하여 사내 개발 서버 환경에 맞는 GitLab CI/CD 배포 파이프라인 구축</li>
-                            <li>K8s 클러스터 인증서 갱신 및 Nginx 웹 서버 보안 패치 적용</li>
-                            <li>사내 개발자 대상 쿠버네티스 및 CI/CD 기술 교육 진행 및 표준 운영 매뉴얼 작성</li>
+                            <li>Kubernetes 기반 운영 인프라를 인수하여 1년간 단독 운영 및 유지보수 수행</li>
+                            <li>기존 배포 구조를 분석해 사내 스테이징 서버에 GitLab CI 자동 배포 파이프라인 구성</li>
+                            <li>K8s 클러스터 인증서 갱신, 웹 서버 보안 패치 적용 및 사내 개발자 대상 Kubernetes 교육 진행</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Insight Project 3: 공공 서비스 -->
+                <!-- Insight Project 3: 공공 클라우드 이전 및 AI 데이터 -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>공공 대민 서비스 구축·이전·운영</h3>
-                        <span class="period">2018.10 - 2022.04</span>
+                        <h3>공공 클라우드 마이그레이션 및 대용량 검수 DB 운영</h3>
+                        <span class="period">2020.02 ~ 2022.02</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">기여도: 50~100% | ㈜인사이트정보</p>
+                        <p class="contribution">클라우드 이전·서버 구축·DB 운영 담당 | ㈜인사이트정보</p>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring Framework</span>
@@ -390,10 +374,9 @@
                             <span>Tomcat</span>
                         </div>
                         <ul class="project-details">
-                            <li><strong>긴급 재난지원금 운영 서버 환경 구축</strong>: 양산시민 약 30만 명 대상 시스템의 Linux 배포 환경 및 DB 서버 구축 전담 (Spring Context 버전 오류 신속 해결로 오픈 완수)</li>
-                            <li><strong>대운산 생태휴양밸리 온라인 예약 시스템 개발</strong>: 체험 프로그램 예약 관리 DB 설계, 본인인증 모듈 연동 및 서버 구축·배포</li>
-                            <li><strong>아동보호관리시스템 PaaS-TA 클라우드 이전</strong>: 전자정부 프레임워크 버전 업그레이드, 보안 로직 호환성 개선 및 Tibero DB 마이그레이션 주도</li>
-                            <li><strong>환경오염 AI 학습용 데이터 구축 사업</strong>: 100만 건 이상 검수 데이터 관리용 쿼리 최적화 및 크라우드소싱 작업 배분 어드민 기능 개발</li>
+                            <li><strong>아동보호 관리시스템 PaaS-TA 이전</strong>: 공공 클라우드 환경 전환에 맞춘 프레임워크 버전업, 보안 로직 호환성 개선 및 Tibero DB 마이그레이션</li>
+                            <li><strong>환경오염 AI 학습용 데이터 구축</strong>: 약 100만 건 이상 검수 데이터 분류, MariaDB 서버 운영 및 검수 적합성 추출·통계 쿼리 작성</li>
+                            <li><strong>재난지원금 및 공공 웹 시스템 인프라 구축</strong>: Linux 운영 서버 배포, DB 환경 구축 및 Tomcat 설정 오류 해결</li>
                         </ul>
                     </div>
                 </div>
@@ -401,40 +384,66 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Key Achievements</h2>
-            <div class="achievements-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-                <div class="achievement-card">
-                    <div class="achievement-icon">⚡</div>
-                    <h3>마이그레이션 툴 성능 개선</h3>
-                    <p class="achievement-stat">1시간대 → 5분대</p>
-                    <p class="achievement-desc">추출 조회 구조 개선, Spring Boot 3.x 메이저 업그레이드, 20개+ 엔터프라이즈 상점 이전 및 사전 검증 파이프라인 개선</p>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">실무 프로젝트에서 직접 사용해 문제를 해결한 기술들입니다.</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Kotlin Coroutines</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Spring MVC</span>
+                        <span class="skill-tag">Spring Batch</span>
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">Spring Data JPA</span>
+                        <span class="skill-tag">QueryDSL</span>
+                        <span class="skill-tag">jOOQ</span>
+                        <span class="skill-tag">MyBatis</span>
+                        <span class="skill-tag">JUnit</span>
+                        <span class="skill-tag">Gradle / Maven</span>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🛒</div>
-                    <h3>이커머스 코어 도메인 개발</h3>
-                    <p class="achievement-stat">회원·주문·운영</p>
-                    <p class="achievement-desc">이상 징후 알림 기능 개발, 웹훅 비동기 격리 및 재시도 체계 구축으로 외부 장애 전파 차단</p>
+                <div class="skill-category">
+                    <h3>Database &amp; Messaging</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MariaDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Tibero</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Apache Kafka</span>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🚀</div>
-                    <h3>글로벌 커머스 전담 운영</h3>
-                    <p class="achievement-stat">1.x → 2.x 버전업</p>
-                    <p class="achievement-desc">5개월간 운영 전담, 프레임워크 메이저 버전업 및 클라우드 이전, 대형 프로모션 트래픽 무장애 대응</p>
+                <div class="skill-category">
+                    <h3>DevOps &amp; Infra</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">NHN Cloud</span>
+                        <span class="skill-tag">PaaS-TA</span>
+                        <span class="skill-tag">GitLab CI</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Tomcat</span>
+                    </div>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🏛️</div>
-                    <h3>공공 대민 & 행정시스템</h3>
-                    <p class="achievement-stat">전면 전환 & 전담 운영</p>
-                    <p class="achievement-desc">경로당 관리 시스템 Struts → React SPA 전면 전환, 30만 시민 재난지원금 서버 구축 전담, K8s 1년 전담 운영</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🛡️</div>
-                    <h3>대용량 데이터 분산 파기</h3>
-                    <p class="achievement-stat">억 단위 데이터 삭제</p>
-                    <p class="achievement-desc">억 단위 규모 누적 데이터 무장애 분산 삭제 주도 및 완수 (최종 잔량 0), AI 학습용 100만 건+ 데이터 관리</p>
+                <div class="skill-category">
+                    <h3>Frontend &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React (SPA)</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">IntelliJ IDEA</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -445,28 +454,24 @@
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
-                <div class="contact-text">
-                    <p>새로운 기술적 도전과 가치 있는 서비스 구축에 항상 열려 있습니다.</p>
-                    <p>궁금한 점이 있으시거나 함께 이야기 나누고 싶으시다면 언제든 편하게 연락해 주세요.</p>
-                </div>
                 <div class="contact-links">
                     <a href="mailto:leejongwoo.dev@gmail.com" class="contact-card">
                         <div class="contact-icon">📧</div>
-                        <div class="contact-info">
+                        <div class="contact-info-box">
                             <span class="contact-label">Email</span>
                             <span class="contact-value">leejongwoo.dev@gmail.com</span>
                         </div>
                     </a>
                     <a href="https://github.com/nicejongwoo" target="_blank" class="contact-card">
                         <div class="contact-icon">💻</div>
-                        <div class="contact-info">
+                        <div class="contact-info-box">
                             <span class="contact-label">GitHub</span>
                             <span class="contact-value">github.com/nicejongwoo</span>
                         </div>
                     </a>
                     <a href="https://nicejongwoo.github.io/nicejongwoo" target="_blank" class="contact-card">
                         <div class="contact-icon">🌐</div>
-                        <div class="contact-info">
+                        <div class="contact-info-box">
                             <span class="contact-label">Portfolio</span>
                             <span class="contact-value">nicejongwoo.github.io/nicejongwoo</span>
                         </div>
