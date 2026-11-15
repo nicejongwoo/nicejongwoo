@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="이종우 - Java, Kotlin, Spring 기반의 7년차 백엔드 엔지니어 포트폴리오">
     <title>이종우 | 서버 백엔드 엔지니어</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,10 +13,6 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">LEE JONG WOO</div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <span class="sun-icon">☀️</span>
-                <span class="moon-icon">🌙</span>
-            </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -25,6 +22,10 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -40,12 +41,12 @@
                 <h1 class="hero-title">이종우</h1>
                 <h2 class="hero-subtitle">서버 백엔드 엔지니어</h2>
                 <p class="hero-description">
-                    멀티테넌트 이커머스 솔루션과 공공 웹 시스템에서<br>
+                    이커머스 솔루션과 공공 웹 시스템에서<br>
                     레거시 시스템 리팩토링·마이그레이션과 대용량 데이터 처리를 수행해 온 7년차 백엔드 개발자입니다.
                 </p>
                 <div class="hero-buttons">
                     <a href="#competencies" class="btn btn-primary">핵심 역량 보기</a>
-                    <a href="https://github.com/nicejongwoo" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="https://github.com/nicejongwoo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
                     <a href="mailto:leejongwoo.dev@gmail.com" class="btn btn-secondary">Email</a>
                 </div>
             </div>
@@ -59,13 +60,13 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        <strong>Java &amp; Kotlin, Spring 기반의 7년차 서버 백엔드 개발자</strong>로 멀티테넌트 이커머스 솔루션(샵바이·샵바이 JP)과 공공 웹 시스템에서 백엔드 플랫폼 개발, 레거시 고도화, 클라우드·컨테이너 환경 대응을 수행해왔습니다.
+                        <strong>Java &amp; Kotlin, Spring Boot 기반의 7년차 서버 백엔드 개발자</strong>입니다. 공공 SI에서 약 4년간 행정·공간정보 웹 시스템을 구축하며 요구사항 분석부터 서버 배포까지 전 과정을 경험했고, 현재는 엔에이치엔커머스에서 이커머스 솔루션(샵바이)의 회원·운영 도메인 개발과 대용량 데이터 마이그레이션 플랫폼을 전담하고 있습니다.
                     </p>
                     <p>
-                        엔터프라이즈급 쇼핑몰 20곳 이상의 <strong>대용량 데이터 마이그레이션 플랫폼 개발 및 운영</strong>을 전담하고 있으며, 대량 회원 추출 조회 구조 개선(추출 단계 약 2시간대 → 5분대 단축), 약 1억 건 이상 운영 데이터의 야간 분산 배치 삭제, 프레임워크 메이저 버전 업그레이드 및 클라우드 컨테이너 환경 전환에 맞춘 애플리케이션 도커라이징을 수행했습니다.
+                        운영 중인 시스템의 구조를 빠르게 파악해 <strong>레거시 리팩토링·메이저 버전 업그레이드와 대용량 데이터 병목 문제</strong>를 해결하는 데 강점이 있습니다. 엔터프라이즈급 쇼핑몰 20곳 이상의 데이터 이전과 약 1억 건 이상의 운영 데이터 삭제 배치를 수행하며, 운영 서비스에 영향을 주지 않고 안전하게 데이터를 처리하는 기준을 다져왔습니다.
                     </p>
                     <p>
-                        개인이 하고 싶은 개발보다 <strong>서비스의 안정성과 운영 병목을 줄이는 기술적 문제 해결</strong>을 우선시합니다. 로컬 격리 환경과 사전 스키마 검증 절차를 마련해 대량 이전 오류를 사전에 차단하고, 문자사업자 전송자격인증제 대응을 위한 발신 권한 게이트·누락 라우트 자동 검출 테스트 및 본인인증 정보 분리보관 구조를 설계·구현했습니다.
+                        개인이 해보고 싶은 기술보다 <strong>서비스의 안정성과 운영 병목을 줄이는 기술적 문제 해결</strong>을 우선시합니다. 원본·추출·결과 건수 대조와 적재 전 유효성 검사 보강으로 대량 이전 오류를 줄이고, 신규 API 추가 시 권한 검증 누락을 테스트 단계에서 자동 검출하는 등 동료와 유관 부서가 신뢰할 수 있는 시스템을 만드는 데 집중하고 있습니다.
                     </p>
                 </div>
                 <div class="about-info">
@@ -74,12 +75,12 @@
                         <div class="info-item">
                             <strong>동의대학교</strong>
                             <p>경영학과 학사 졸업</p>
-                            <p class="period">2008.03 - 2017.02</p>
+                            <p class="period">2008.03 ~ 2017.02</p>
                         </div>
                         <div class="info-item">
                             <strong>시큐어코딩을 활용한 웹개발 전문가 과정</strong>
                             <p>부경대학교 (800시간)</p>
-                            <p class="period">2017.06 - 2017.12</p>
+                            <p class="period">2017.06 ~ 2017.12</p>
                         </div>
                     </div>
                     <div class="info-card">
@@ -112,11 +113,9 @@
                         </div>
                         <p class="description">이커머스 솔루션 「샵바이(shopby)」 및 일본향 이커머스 플랫폼 백엔드 개발·운영</p>
                         <ul class="work-list">
-                            <li>엔터프라이즈급 쇼핑몰 20곳 이상의 대용량 데이터 마이그레이션 플랫폼 전담 개발·운영, 회원 추출 병목 개선(약 2시간대 → 5분대) 및 Spring Boot 메이저 버전업(2.7 → 3.5)</li>
-                            <li>문자사업자 전송자격인증제 대응(발신 권한 게이트·2차 인증·세션 무효화) 및 본인인증 정보(DI) 몰×계정 단위 분리보관·삭제 배치 구현</li>
-                            <li>몰 삭제 비동기 파이프라인 재시도 경로 추가·데드락 방지 개선, 보안 취약점(비밀글 우회·토큰 삭제 원자성) 수정 및 외부 연동 웹훅 발행 실패 격리</li>
-                            <li>일본향 플랫폼(샵바이 JP) API·어드민 개발·운영, Spring Boot 메이저 버전업(1.5 → 2.7, 2인 공동) 및 클라우드 컨테이너 환경 전환에 맞춘 애플리케이션 도커라이징 대응</li>
-                            <li>인계받은 서비스 종료 쇼핑몰 삭제 배치 오류 수정·튜닝을 통한 약 1억 건 이상 운영 데이터 야간 분산 삭제 (최종 잔량 0 확인)</li>
+                            <li><strong>데이터 마이그레이션 플랫폼 전담 (2025.01 ~ 현재)</strong>: 이전용 추출 툴·적재 서버 인수 후 성능·메모리 구조 개선, 프레임워크 메이저 버전업 및 엔터프라이즈급 쇼핑몰 20곳 이상 이전 대응</li>
+                            <li><strong>샵바이 회원·주문·운영 도메인 백엔드 개발 (2025.08 ~ 현재)</strong>: 문자사업자 전송자격인증제 대응, 본인인증 정보 분리보관·삭제 배치, 몰 삭제 비동기 재시도 경로 추가, 보안 취약점 조치 및 외부 연동 웹훅 안정화</li>
+                            <li><strong>샵바이 JP(일본향 플랫폼) 개발·운영 (2023.05 ~ 2026.08)</strong>: 커머스 API·어드민 개발, Spring Boot 메이저 버전업(2인 공동), 클라우드 컨테이너 전환에 맞춘 애플리케이션 도커라이징 및 서비스 종료 쇼핑몰 대용량 운영 데이터 삭제 수행</li>
                         </ul>
                     </div>
                 </div>
@@ -134,11 +133,9 @@
                         </div>
                         <p class="description">시스템통합(SI), 공공 웹서비스, 공간정보시스템 및 AI 학습용 데이터 구축 IT 기업</p>
                         <ul class="work-list">
-                            <li>경로당 관리 시스템 고도화 개발 주도 (Spring Boot REST API + React 반응형 SPA 기술 스택 제안·적용, 기여도 80%)</li>
-                            <li>건설정보관리시스템 Kubernetes 클러스터 1년 단독 운영·유지보수, 사내 스테이징 서버 K8s·GitLab CI 설정 및 사내 직원 대상 K8s 기술 교육·매뉴얼 작성</li>
-                            <li>아동보호 관리시스템 프레임워크 버전 업그레이드·PaaS-TA 클라우드 이전 대응 및 Spring Security 버전 변경에 따른 암호화·인증 로직 수정</li>
-                            <li>환경오염 AI 학습용 데이터 구축 사업의 크라우드소싱 웹 기능 개발, 검수 데이터 DB 운영 및 적합성 데이터 추출·통계 쿼리 작성 (팀 전체 약 100만 건 이상 분류)</li>
-                            <li>약 30만 양산시민 대상 재난지원금 운영 서버 및 공공 웹 시스템의 Linux·DB·Tomcat 배포 환경 구축·트러블슈팅</li>
+                            <li><strong>공공기관 웹 시스템 구축 및 레거시 고도화</strong>: 고객사 요구사항 분석, DB 설계, 백엔드 API·프론트엔드(React SPA, JSP) 개발 및 레거시 데이터 마이그레이션 주도</li>
+                            <li><strong>컨테이너·클라우드 운영 환경 관리 및 이전 대응</strong>: 건설정보관리시스템 Kubernetes 클러스터 1년 단독 운영, 사내 스테이징 서버 K8s·GitLab CI 설정 및 공공 클라우드(PaaS-TA) 이전 대응</li>
+                            <li><strong>AI 학습데이터 검수 웹 개발 및 온프레미스 서버 구축</strong>: 크라우드소싱 작업 배분·통계 웹 개발, 검수 데이터 DB 운영 및 지자체 재난지원금 시스템 등 Linux·DB·Tomcat 배포 환경 구축</li>
                         </ul>
                     </div>
                 </div>
@@ -146,10 +143,11 @@
         </div>
     </section>
 
-    <!-- Competencies (역량) Section -->
+    <!-- Competencies Section -->
     <section id="competencies" class="competencies">
         <div class="container">
-            <h2 class="section-title">역량 (Competencies)</h2>
+            <h2 class="section-title">Competencies</h2>
+            <p class="section-subtitle">프로젝트에서 직접 기술적으로 문제를 해결하며 다져온 핵심 엔지니어링 역량입니다.</p>
             <div class="competency-categories">
                 <!-- 1. 레거시 시스템 리팩토링/리엔지니어링 -->
                 <div class="competency-block">
@@ -157,11 +155,11 @@
                         <h3>레거시 시스템 리팩토링/리엔지니어링</h3>
                     </div>
                     <ul class="competency-list">
-                        <li>샵바이 마이그레이션 서버 Spring Boot 메이저 버전업(2.7 -&gt; 3.5) 호환성 해결 및 상품 DB 분리에 따른 데이터소스 분리·트랜잭션 미커밋 오류 수정 <span class="comp-period">(2025.10 ~ 2026.02)</span></li>
-                        <li>샵바이 JP 전체 시스템 Gradle·Spring Boot 메이저 버전(1.5 -&gt; 2.7) 동시 업그레이드 및 모듈 의존 순서 기반 단계별 전환 <span class="comp-period">(2인 공동, 2023.12 ~ 2024.06)</span></li>
-                        <li>샵바이 JP 클라우드 컨테이너 환경 전환에 맞춘 애플리케이션 도커라이징(Gradle 빌드 시 Docker 이미지 생성 구성) 및 클라우드 배포 코드 대응 <span class="comp-period">(2023.12 ~ 2024.04)</span></li>
+                        <li>샵바이 마이그레이션 서버 Spring Boot 메이저 버전업(2.7 → 3.5) 및 상품 DB 데이터소스 분리·트랜잭션 미커밋 오류 해결 <span class="comp-period">(2025.10 ~ 2026.02)</span></li>
+                        <li>샵바이 JP 전체 시스템 빌드 도구(Gradle)·Spring Boot 메이저 버전(1.5 → 2.7) 동시 업그레이드 및 모듈 의존 순서 기반 단계별 전환 <span class="comp-period">(2인 공동, 2023.12 ~ 2024.06)</span></li>
+                        <li>샵바이 JP 클라우드 컨테이너 전환을 위한 멀티모듈 애플리케이션 Gradle 도커라이징 구성 및 배포 환경 대응 <span class="comp-period">(2023.12 ~ 2024.04)</span></li>
                         <li>경로당 관리 시스템 고도화 — 레거시 분석·기능 개선 및 Spring Boot REST API + React 반응형 SPA 기술 스택 제안·적용 <span class="comp-period">(개발 주도, 2022.06 ~ 2022.10)</span></li>
-                        <li>아동보호 관리시스템 프레임워크 버전 업그레이드·PaaS-TA 클라우드 이전 및 Spring Security 버전 변경에 따른 비밀번호 암호화·인증 로직 전면 수정 <span class="comp-period">(2020.09 ~ 2020.10)</span></li>
+                        <li>아동보호 관리시스템 프레임워크 업그레이드·PaaS-TA 클라우드 이전 및 Spring Security 버전 변경에 따른 암호화·인증 로직 수정 <span class="comp-period">(2020.09 ~ 2020.10)</span></li>
                     </ul>
                 </div>
 
@@ -171,11 +169,11 @@
                         <h3>대용량 데이터 처리 및 배치·이전 성능 개선</h3>
                     </div>
                     <ul class="competency-list">
-                        <li>엔터프라이즈급 쇼핑몰 20곳 이상의 대용량 데이터 마이그레이션 플랫폼 전담 개발·운영 <span class="comp-period">(2025.01 ~ 현재)</span></li>
-                        <li>대용량 회원 추출의 전수 조회 구조를 조회용 맵(Map) 기반으로 전환하고 반복 파일 탐색 제거·청크 단위 처리로 개선 (추출 단계 약 2시간대 -&gt; 5분대, 전체 약 3시간대 -&gt; 1시간대 단축)</li>
-                        <li>대량 이전 중 발생한 상품 메모리 부족(OOM) 오류 수정, 상품옵션 처리 단위 조정·벌크(<code>batchInsert</code>) 전환 및 회원 이전 시 인스턴스마다 반복 실행되던 임시비밀번호 암호화 병목 개선</li>
-                        <li>인계받은 서비스 종료 쇼핑몰 삭제 배치의 미동작 결함 수정, 청크 처리 성능 리스너·사이즈 조정 및 대량 삭제 복제 구간 오류 해결을 통한 약 1억 건 이상 운영 데이터 야간 분산 삭제 완수</li>
-                        <li>크라우드소싱 웹 인증·권한·작업 배분·통계 기능 개발, 검수 데이터 DB 운영 및 적합성 데이터 추출·통계 쿼리 작성 (팀 전체 약 100만 건 이상 AI 검수 데이터 분류)</li>
+                        <li>엔터프라이즈급 쇼핑몰 20곳 이상의 대용량 데이터 마이그레이션 플랫폼 전담 개발·운영</li>
+                        <li>대용량 회원 추출의 조회용 맵(Map) 전환·반복 파일 탐색 제거 및 청크 처리 개선을 통한 추출 시간 단축(약 2시간대 → 5분대, 전체 약 3시간대 → 1시간대)</li>
+                        <li>대량 상품 이전 시 메모리 부족(OOM) 오류 수정·옵션 처리 단위 조정·벌크 처리 전환 및 회원 임시비밀번호 반복 암호화 병목 개선</li>
+                        <li>서비스 종료 쇼핑몰 삭제 배치의 미실행 결함·대량 삭제 오류 수정 및 테이블 분리·청크 조정을 통한 약 1억 건 이상 운영 데이터 야간 분산 삭제</li>
+                        <li>약 100만 건 이상 AI 학습 데이터 분류(팀 성과)를 위한 크라우드소싱 웹(인증·배분·통계) 개발 및 검수 DB 운영·추출 쿼리 작성</li>
                     </ul>
                 </div>
 
@@ -185,13 +183,13 @@
                         <h3>견고한 데이터 구조 및 보안·비동기 아키텍처 설계</h3>
                     </div>
                     <ul class="competency-list">
-                        <li>문자사업자 전송자격인증제 대응을 위한 발신 권한 단일 원천(SSOT) 판정, SMS 쓰기 API 전체 권한 게이트 및 누락 라우트 자동 검출 테스트 구현</li>
-                        <li>정책 변경에 맞춘 통과권 소비형(fail-closed) 2차 인증 전환, 휴대폰 변경 시 인증 세션 무효화 및 대량 발송 접속기록 샘플링 발행(fail-open) 구조 구현</li>
-                        <li>본인인증 정보(DI)의 몰×계정 단위 별도 테이블 분리보관, 5종 삭제 트리거·만료 삭제 배치 구현 및 코드 내 날짜 분기 없는 2단계(선배포 -&gt; 본배포) 배포</li>
-                        <li>운영 중이던 몰 삭제 비동기 파이프라인에 별도 재시도 토픽 및 배치·컨슈머 경로 추가, 캐시 기반 초안을 리뷰 반영해 DB 상태(기준 데이터 잔존 여부) 판정으로 재구현 및 삭제 처리 데드락 방지 개선</li>
-                        <li>외부 연동 웹훅 확장, 장바구니 등록 시 발행 실패가 본 기능 응답(500)에 번지지 않도록 격리 및 주문상태 비동기 처리 시 웹훅 미발행 동기화 수정</li>
-                        <li>단건 로그아웃·재발급 단일 원자 요청 처리 및 판정 키 선삭제를 통한 토큰 삭제·재발급 원자성 확보(동시성 테스트 검증) 및 비밀글 검증 우회 경로 차단</li>
-                        <li>대량 데이터 이전 정합성 보장을 위한 파트너 벌크 처리 태그 충돌 삭제 버그 수정, 자체파트너 필터링·조합형 옵션 불일치 검증 및 게시판 항목별 선택 이전 구조 개편</li>
+                        <li>문자사업자 전송자격인증제 대응을 위한 서버 측 발신 권한 통합 판정, 발신 API 권한 게이트 및 누락 라우트 자동 검출 테스트 구현</li>
+                        <li>정책 변경에 맞춘 2차 인증의 진입 시 1회성 검증 구조 전환, 휴대폰 변경 시 인증 세션 무효화 및 개인정보 접속기록 비동기 샘플링 발행 구현</li>
+                        <li>본인인증 정보 관리 단위 재정의·별도 테이블 분리보관, 다중 삭제 경로 연계·보관기간 경과 삭제 배치 구현 및 유예 기간 호환 2단계 배포</li>
+                        <li>몰 삭제 비동기 파이프라인의 재시도 토픽·배치·컨슈머 경로 추가, DB 기준 데이터 잔존 상태 판정 전환 및 삭제 처리 데드락 방지 개선</li>
+                        <li>외부 연동 웹훅 확장, 장바구니 웹훅 발행 실패 시 본 기능 응답 영향 격리 및 주문상태 비동기 처리 시 웹훅 미발행 동기화 수정</li>
+                        <li>로그아웃·재발급 경합 시 세션 부활 방지를 위한 토큰 원자적 삭제·재발급 처리(동시성 테스트 검증) 및 비밀글 검증 우회 경로 차단</li>
+                        <li>대량 이전 정합성을 위한 파트너 대량 처리 조건 충돌 오삭제 버그 수정, 이전 제외 대상 필터링·조합형 옵션 사전 검증 및 게시판 선택 이전 개편</li>
                     </ul>
                 </div>
 
@@ -204,7 +202,7 @@
                         <li><span class="env-badge">K8s</span> 건설정보관리시스템 Kubernetes 클러스터 환경 1년 단독 운영·유지보수 및 사내 직원 대상 K8s 기술 교육·매뉴얼 작성</li>
                         <li><span class="env-badge">CI</span> 사내 스테이징 서버 Kubernetes 클러스터 환경 구성 및 GitLab CI 설정</li>
                         <li><span class="env-badge">Docker</span> 클라우드 컨테이너 환경 실행을 위한 멀티모듈 애플리케이션 Gradle 도커라이징 구성 및 연동 오류 해결</li>
-                        <li><span class="env-badge">Linux</span> 약 30만 양산시민 대상 재난지원금 시스템의 Linux·DB 배포 서버 구축 및 로컬 동일 버전 Tomcat 재현을 통한 Spring 설정 버전 충돌 장애 해결</li>
+                        <li><span class="env-badge">Linux</span> 약 30만 양산시민 대상 재난지원금 시스템의 Linux·DB 배포 서버 구축 및 로컬 동일 버전 Tomcat 재현을 통한 Spring 설정 충돌 해결</li>
                     </ul>
                 </div>
             </div>
@@ -235,9 +233,9 @@
                         <ul class="project-details">
                             <li>엔터프라이즈급 쇼핑몰 20곳 이상의 데이터 추출(Python) 및 샵바이 표준 적재(Kotlin/Spring Boot) 플랫폼 개선·장애 대응·모니터링 전담</li>
                             <li>회원 추출 전수 조회 구조를 조회용 맵(Map) 기반으로 전환하고 반복 파일 탐색 제거·청크 단위 처리로 개선하여 <strong>추출 단계 약 2시간대 → 5분대 단축 (전체 이전 시간 약 3시간대 → 1시간대)</strong></li>
-                            <li>대량 상품 이전 중 발생한 <strong>메모리 부족(OOM) 오류 수정, 상품옵션 처리 단위 조정·벌크(<code>batchInsert</code>) 전환 및 회원 임시비밀번호 반복 암호화 병목 개선</strong></li>
+                            <li>대량 상품 이전 중 발생한 <strong>메모리 부족(OOM) 오류 수정, 상품옵션 처리 단위 조정·벌크 처리 전환 및 회원 이전 시 인스턴스마다 반복 실행되던 임시비밀번호 암호화 병목 개선</strong></li>
                             <li>마이그레이션 서버 <strong>Spring Boot 메이저 버전업(2.7 → 3.5)</strong> 호환성 해결 및 상품 DB 분리에 따른 데이터소스 분리·트랜잭션 미커밋 오류 수정</li>
-                            <li>대량 파트너 벌크 처리 시 조건 충돌 삭제 버그 수정, 자체파트너 필터링·조합형 옵션 불일치 검증·게시판 항목별 선택 이전 및 실제 엑셀 행 번호 에러 출력 보강</li>
+                            <li>파트너 대량 처리 시 조건 충돌 오삭제 버그 수정, 이전 제외 대상 필터링·조합형 옵션 불일치 검증·게시판 항목별 선택 이전 및 실제 엑셀 행 번호 에러 출력 보강</li>
                         </ul>
                     </div>
                 </div>
@@ -259,11 +257,11 @@
                             <span>Redis</span>
                         </div>
                         <ul class="project-details">
-                            <li><strong>문자사업자 전송자격인증제 대응</strong>: 발신 권한 단일 원천(SSOT) 판정, SMS 쓰기 API 전체 권한 게이트 및 누락 라우트 자동 검출 테스트 구현</li>
-                            <li><strong>2차 인증 및 세션·접속기록</strong>: 통과권 소비형(fail-closed) 2차 인증 전환, 휴대폰 변경 시 인증 세션 무효화 및 대량 발송 접속기록 샘플링 발행(fail-open)</li>
-                            <li><strong>본인인증 정보(DI) 분리보관·삭제</strong>: 몰×계정 단위 별도 테이블 분리, 5종 삭제 트리거·만료 삭제 배치 구현, 코드 내 날짜 분기 없는 2단계(선배포 → 본배포) 적용 및 레거시 계정 타인 명의 등록 차단</li>
-                            <li><strong>몰 삭제 비동기 파이프라인 재시도 경로 추가</strong>: 별도 재시도 토픽 및 배치·컨슈머 양쪽 구현, 캐시 기반 초안을 리뷰 반영해 DB 상태 판정으로 재구현 및 삭제 처리 데드락 방지 개선</li>
-                            <li><strong>보안 취약점 수정 및 웹훅 격리</strong>: 단건 로그아웃·재발급 단일 원자 요청 처리로 토큰 원자성 확보, 비밀글 검증 우회 차단, 장바구니 웹훅 발행 실패 500 전파 격리 및 비동기 웹훅 누락 수정</li>
+                            <li><strong>문자사업자 전송자격인증제 대응</strong>: API 직접 호출 우회를 막기 위한 서버 측 발신 권한 통합 판정, 발신 API 전체 권한 게이트 및 누락 라우트 자동 검출 테스트 구현</li>
+                            <li><strong>2차 인증 및 세션·접속기록</strong>: 정책 변경에 맞춘 2차 인증의 진입 시 1회성 검증 구조 전환, 휴대폰 변경 시 인증 세션 무효화 및 본 기능 영향을 최소화한 접속기록 샘플링 발행 구현</li>
+                            <li><strong>본인인증 정보 분리보관·삭제</strong>: 정보 관리 단위 재정의 및 별도 테이블 분리보관, 다중 삭제 경로 연계·보관기간 경과 삭제 배치 구현, 유예 기간 호환 2단계 배포 및 레거시 계정 타인 명의 등록 차단</li>
+                            <li><strong>몰 삭제 비동기 파이프라인 재시도 경로 추가</strong>: 별도 재시도 토픽 및 배치·컨슈머 양쪽 구현, 코드 리뷰를 반영한 DB 기준 데이터 잔존 상태 판정 재구현 및 삭제 처리 데드락 방지 개선</li>
+                            <li><strong>보안 취약점 수정 및 웹훅 격리</strong>: 로그아웃·재발급 동시 요청 시 토큰 원자적 삭제·재발급 처리(동시성 테스트 검증), 비밀글 검증 우회 차단, 장바구니 웹훅 발행 실패 시 본 기능 응답 영향 격리 및 비동기 웹훅 누락 수정</li>
                         </ul>
                     </div>
                 </div>
@@ -287,9 +285,9 @@
                             <span>Docker</span>
                         </div>
                         <ul class="project-details">
-                            <li>보안 취약점 대응을 위해 <strong>Gradle(4.8 → 7.3)·Spring Boot(1.5 → 2.7) 동시 업그레이드 및 모듈 의존 순서 기반 단계별 전환</strong> 수행 (2인 공동, 2023.12 ~ 2024.06)</li>
+                            <li>보안 취약점 대응을 위해 <strong>빌드 도구(Gradle)·Spring Boot(1.5 → 2.7) 메이저 버전 동시 업그레이드 및 모듈 의존 순서 기반 단계별 전환</strong> 수행 (2인 공동, 2023.12 ~ 2024.06)</li>
                             <li>데브옵스의 클라우드 컨테이너 환경 전환에 맞춰 <strong>애플리케이션 도커라이징(Gradle 빌드 시 Docker 이미지 생성 구성) 및 클라우드 배포 코드·연동 오류 수정</strong> (2023.12 ~ 2024.04)</li>
-                            <li><strong>약 1억 건 이상 서비스 종료 쇼핑몰 운영 데이터 삭제</strong>: 인계 배치의 미동작 결함 수정, 청크 처리 성능 리스너·사이즈 조정 및 대량 삭제 복제 구간 오류 해결 후 야간 분산 실행으로 잔량 0 확인 (2025.10 ~ 2025.11)</li>
+                            <li><strong>약 1억 건 이상 서비스 종료 쇼핑몰 운영 데이터 삭제</strong>: 인계 배치의 미실행 결함 수정, 테이블별 실행 분리·청크 처리 단위 조정 및 실행 중 발생한 대량 삭제 오류 수정·재실행으로 잔량 0 확인 (2025.10 ~ 2025.11)</li>
                             <li>배송 배치 실패 후 수동 출고 시 발생하던 <strong>출고대기재고 중복 차감 오류 수정</strong>, 재고 복원 방어 코드 및 재고 이력 테이블의 출고대기재고 기록 추가 (2023.09 ~ 2023.10)</li>
                             <li>일본 카드결제 3-D Secure(3DS) 인증 연동 및 서비스 종료에 따른 어드민 공지·결제·접속 차단 코드 대응</li>
                         </ul>
@@ -303,7 +301,7 @@
                         <span class="period">2022.06 ~ 2022.10</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">백엔드·프론트 고도화 개발 주도 (기여도 80%) | ㈜인사이트정보</p>
+                        <p class="contribution">백엔드·프론트 고도화 개발 주도 | ㈜인사이트정보</p>
                         <div class="tech-stack">
                             <span>Java</span>
                             <span>Spring Boot</span>
@@ -330,20 +328,20 @@
                         <span class="period">2022.01 ~ 2022.12</span>
                     </div>
                     <div class="project-body">
-                        <p class="contribution">단독 운영·유지보수 (기여도 100%) | ㈜인사이트정보</p>
+                        <p class="contribution">단독 운영·유지보수 | ㈜인사이트정보</p>
                         <div class="tech-stack">
                             <span>Kubernetes</span>
                             <span>Docker</span>
                             <span>GitLab CI</span>
-                            <span>Nginx</span>
                             <span>PostgreSQL</span>
                             <span>Spring Boot</span>
                             <span>React</span>
+                            <span>TypeScript</span>
                         </div>
                         <ul class="project-details">
                             <li>Kubernetes 클러스터 기반 시스템을 인수하여 1년간 단독 운영·유지보수 및 업무담당자 요청 기능 추가·수정</li>
                             <li>사내 스테이징 서버에 Kubernetes 클러스터 환경 구성 및 <strong>GitLab CI 설정, 운영 매뉴얼 작성</strong></li>
-                            <li>K8s 클러스터 인증서 갱신, Nginx 보안 작업 및 사내 직원 대상 Kubernetes 기술 교육 진행</li>
+                            <li>사내 직원 대상 Kubernetes 기술 교육 진행 및 부서 이동 담당자 대상 시스템 이용 안내 수행</li>
                         </ul>
                     </div>
                 </div>
@@ -391,7 +389,7 @@
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Kotlin</span>
                         <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Spring MVC</span>
+                        <span class="skill-tag">Spring Framework</span>
                         <span class="skill-tag">Spring Batch</span>
                         <span class="skill-tag">Spring Security</span>
                         <span class="skill-tag">Spring Data JPA</span>
@@ -422,7 +420,6 @@
                         <span class="skill-tag">PaaS-TA</span>
                         <span class="skill-tag">GitLab CI</span>
                         <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Nginx</span>
                         <span class="skill-tag">Tomcat</span>
                     </div>
                 </div>
@@ -454,14 +451,14 @@
                             <span class="contact-value">leejongwoo.dev@gmail.com</span>
                         </div>
                     </a>
-                    <a href="https://github.com/nicejongwoo" target="_blank" class="contact-card">
+                    <a href="https://github.com/nicejongwoo" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <div class="contact-icon">💻</div>
                         <div class="contact-info-box">
                             <span class="contact-label">GitHub</span>
                             <span class="contact-value">github.com/nicejongwoo</span>
                         </div>
                     </a>
-                    <a href="https://nicejongwoo.github.io/nicejongwoo" target="_blank" class="contact-card">
+                    <a href="https://nicejongwoo.github.io/nicejongwoo" target="_blank" rel="noopener noreferrer" class="contact-card">
                         <div class="contact-icon">🌐</div>
                         <div class="contact-info-box">
                             <span class="contact-label">Portfolio</span>

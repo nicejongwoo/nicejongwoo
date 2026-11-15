@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-primary);
@@ -166,7 +166,6 @@ body {
     justify-content: center;
     background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
     position: relative;
-    padding-top: 80px;
     overflow: hidden;
 }
 
@@ -788,6 +787,15 @@ section:not(#home) {
 
     .hamburger {
         display: flex;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        margin-right: 0.5rem;
+    }
+
+    .competency-block {
+        padding: 1.5rem 1.25rem;
     }
 
     .hero-title {
